@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de [Seu Nome], desenvolvedor Python focado em criar ferramentas práticas para o dia a dia e otimização de sistemas, incluindo controle de áudio para Windows.">
-    <title>Portfólio de Projetos Python | [Seu Nome]</title>
+    <meta name="description" content="Portfólio de jdfxop, estudante de backend (Python, Java, JavaScript) focado em criar ferramentas práticas para o dia a dia e otimização de sistemas, incluindo controle de áudio para Windows.">
+    <title>Portfólio de Projetos | jdfxop</title>
     <style>
         /* Estilos gerais */
         body {
@@ -97,7 +97,7 @@
         .about-text p {
             font-size: 1.1em;
             color: #555;
-            margin-bottom: 15px; /* Adicionado para espaçamento entre parágrafos */
+            margin-bottom: 15px;
         }
         
         .skills-list {
@@ -148,7 +148,7 @@
         .project-card p {
             color: #666;
             font-size: 1em;
-            margin-bottom: 15px; /* Ajustado para espaçamento */
+            margin-bottom: 15px;
         }
 
         .project-card .technologies {
@@ -223,8 +223,8 @@
 
     <header>
         <div class="container">
-            <h1>Olá! Sou [Seu Nome]</h1>
-            <p>Desenvolvedor Python | Focado em Otimização e Ferramentas Práticas</p>
+            <h1>Olá! Sou jdfxop</h1>
+            <p>Estudante de Python, Java, JavaScript | Backend em formação | Criador de soluções para Windows</p>
         </div>
     </header>
 
@@ -232,17 +232,20 @@
         <div class="container">
             <h2>Sobre Mim</h2>
             <div class="about-content">
-                <img src="https://via.placeholder.com/200" alt="Foto de perfil de [Seu Nome], desenvolvedor Python">
+                <img src="https://via.placeholder.com/200" alt="Foto de perfil de jdfxop, desenvolvedor backend">
                 <div class="about-text">
                     <p>
-                        Bem-vindo(a) ao meu portfólio! Sou um desenvolvedor Python que adora criar **soluções práticas e inteligentes** para o dia a dia. Meu foco está em transformar ideias em aplicativos funcionais que simplificam tarefas e oferecem novas possibilidades.
+                        Bem-vindo(a) ao meu portfólio! Sou <strong>jdfxop</strong>, estudante focado em backend, atualmente aprendendo Python, Java e JavaScript. Tenho paixão por criar <strong>aplicativos que ajudam a resolver problemas do Windows</strong> e tornar o dia a dia mais prático.
                     </p>
                     <p>
-                        Acredito que a tecnologia deve ser uma aliada, e é por isso que meus projetos são pensados para **resolver problemas reais e otimizar a experiência do usuário**. Explore abaixo para ver como busco inovar, especialmente na interação com sistemas operacionais.
+                        Acredito que a tecnologia pode facilitar a vida, por isso busco desenvolver ferramentas úteis, principalmente para quem enfrenta desafios com sistemas operacionais.
                     </p>
                     <h3>Minhas Habilidades:</h3>
                     <ul class="skills-list">
                         <li>Python</li>
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                        <li>Backend em formação</li>
                         <li>Automação de Tarefas</li>
                         <li>Manipulação de Áudio (Windows)</li>
                         <li>Controle de Dispositivos de Entrada</li>
@@ -261,39 +264,64 @@
             <div class="projects-grid">
                 
                 <div class="project-card">
+                    <h3>Controlador de Volume de Aplicativos de Entrada (Windows)</h3>
+                    <p>
+                        Aplicativo desenvolvido para <strong>controlar o volume dos aplicativos de entrada do Windows</strong>, permitindo um gerenciamento mais preciso e personalizado dos dispositivos de áudio de entrada, como microfones e outros dispositivos de captura de som.
+                    </p>
+                    <p>
+                        <strong>Minha visão:</strong> Este projeto surgiu da necessidade de ter um controle mais detalhado sobre o volume dos aplicativos de entrada, algo que o Windows não oferece nativamente. Ideal para quem realiza chamadas, gravações ou transmissões e precisa ajustar o volume de entrada de diferentes aplicativos sem complicação.
+                    </p>
+                    <p class="technologies"><strong>Tecnologias:</strong> Python, Bibliotecas de Controle de Áudio do Windows (<code>pycaw</code>, <code>pyaudio</code>, <code>comtypes</code>), <code>tkinter</code> (para GUI)</p>
+                    <a href="https://github.com/regaliainterno/windows_entrada" target="_blank">Ver no GitHub</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Controlador de Volume de Aplicativos de Saída (Windows)</h3>
+                    <p>
+                        Aplicativo criado para <strong>controlar o volume dos aplicativos de saída do Windows</strong>, permitindo um ajuste individualizado de cada aplicativo que emite som pelo sistema, como players de música, jogos ou navegadores.
+                    </p>
+                    <p>
+                        <strong>Minha visão:</strong> Desenvolvi este projeto para facilitar o gerenciamento do volume de diferentes programas, algo que o Windows não faz de forma prática nativamente. Ideal para quem precisa equilibrar volumes entre apps, seja para produtividade, lazer ou comunicação.
+                    </p>
+                    <p class="technologies"><strong>Tecnologias:</strong> Python, Bibliotecas de Controle de Áudio do Windows (<code>pycaw</code>, <code>pyaudio</code>, <code>comtypes</code>), <code>tkinter</code> (para GUI)</p>
+                    <a href="https://github.com/regaliainterno/windows_saida" target="_blank">Ver no GitHub</a>
+                </div>
+
+                <div class="project-card">
                     <h3>Controlador de Volume Mestre (com Boost)</h3>
                     <p>
-                        Um aplicativo em Python para Windows que oferece controle total sobre o **volume de saída do sistema**. Além das funções básicas de ajuste, ele possui um recurso exclusivo para **aumentar o volume acima do limite padrão do Windows**.
+                        Um aplicativo em Python para Windows que oferece controle total sobre o <strong>volume de saída do sistema</strong>. Além das funções básicas de ajuste, ele possui um recurso exclusivo para <strong>aumentar o volume acima do limite padrão do Windows</strong>.
                     </p>
                     <p>
-                        **Minha visão:** Desenvolvi este app pensando em otimizar a experiência em cenários onde cada decibel faz a diferença, como em **jogos FPS**, onde a audição de passos e sons ambientes pode ser crucial para a vantagem competitiva.
+                        <strong>Minha visão:</strong> Desenvolvi este app pensando em otimizar a experiência em cenários onde cada decibel faz a diferença, como em <strong>jogos FPS</strong>, onde a audição de passos e sons ambientes pode ser crucial para a vantagem competitiva.
                     </p>
-                    <p class="technologies">**Tecnologias:** Python, Bibliotecas de Controle de Áudio do Windows (ex: `pycaw`, `pyaudio` ou `comtypes`), `tkinter` (para GUI)</p>
-                    <a href="https://github.com/seu-usuario/app-volume-windows" target="_blank">Ver no GitHub</a>
+                    <p class="technologies"><strong>Tecnologias:</strong> Python, Bibliotecas de Controle de Áudio do Windows (<code>pycaw</code>, <code>pyaudio</code> ou <code>comtypes</code>), <code>tkinter</code> (para GUI)</p>
+                    <a href="https://github.com/jdfxop/app-volume-windows" target="_blank">Ver no GitHub</a>
                 </div>
 
                 <div class="project-card">
                     <h3>Mantenedor de Volume de Microfone</h3>
                     <p>
-                        Este aplicativo Python resolve um problema comum no Windows: a **redução automática do volume do microfone**. Ele garante que o **volume do seu dispositivo de entrada permaneça em 100%**, mesmo quando o sistema tenta ajustá-lo.
+                        Este aplicativo Python resolve um problema comum no Windows: a <strong>redução automática do volume do microfone</strong>. Ele garante que o <strong>volume do seu dispositivo de entrada permaneça em 100%</strong>, mesmo quando o sistema tenta ajustá-lo.
                     </p>
                     <p>
-                        **Minha visão:** Criei esta ferramenta para garantir uma comunicação clara e ininterrupta em chamadas, gravações ou transmissões. É ideal para quem precisa de estabilidade no áudio do microfone sem interrupções indesejadas.
+                        <strong>Minha visão:</strong> Criei esta ferramenta para garantir uma comunicação clara e ininterrupta em chamadas, gravações ou transmissões. É ideal para quem precisa de estabilidade no áudio do microfone sem interrupções indesejadas.
                     </p>
-                    <p class="technologies">**Tecnologias:** Python, Bibliotecas de Controle de Áudio do Windows (ex: `pycaw`, `pyaudio` ou `comtypes`), `tkinter` (para GUI)</p>
-                    <a href="https://github.com/seu-usuario/app-microfone-windows" target="_blank">Ver no GitHub</a>
+                    <p class="technologies"><strong>Tecnologias:</strong> Python, Bibliotecas de Controle de Áudio do Windows (<code>pycaw</code>, <code>pyaudio</code> ou <code>comtypes</code>), <code>tkinter</code> (para GUI)</p>
+                    <a href="https://github.com/jdfxop/app-microfone-windows" target="_blank">Ver no GitHub</a>
                 </div>
 
-                </div>
+            </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 [Seu Nome]. Todos os direitos reservados.</p>
+            <p>&copy; 2025 jdfxop. Todos os direitos reservados.</p>
             <div class="social-links">
-                <a href="https://github.com/seu-usuario" target="_blank">GitHub</a> |
+                <a href="https://github.com/jdfxop" target="_blank">GitHub</a> |
                 <a href="https://linkedin.com/in/seu-perfil" target="_blank">LinkedIn</a> |
+                <a href="https://instagram.com/jdfxop" target="_blank">Instagram</a> |
                 <a href="mailto:seu.email@example.com">Email</a>
             </div>
         </div>
