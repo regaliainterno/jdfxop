@@ -1,4 +1,4 @@
-# Olá! Eu sou Lucas Scremin 👋
+# Olá! Eu sou Lucas do Nascimento 👋
 
 <p align="left">
   <a href="https://github.com/regaliainterno">
@@ -16,41 +16,47 @@
 
 ## 🚀 Sobre Mim
 
-Olá! Sou Lucas Scremin, um desenvolvedor em formação de 28 anos, apaixonado por tecnologia e focado em construir soluções robustas e inovadoras. Atualmente, estou me aprofundando em **Python**, **Java** e **JavaScript** através de cursos da Udemy, com o objetivo de me tornar um profissional Full Stack.
+Olá! Sou Lucas do Nascimento, um **desenvolvedor Full Stack em formação** de 28 anos, apaixonado por tecnologia e focado em construir soluções robustas e inovadoras. Atualmente, estou aprimorando minhas habilidades em **Python**, **Java** e **JavaScript** através de cursos abrangentes da Udemy.
 
-Minha jornada de aprendizado me proporcionou uma base sólida em:
+Minha jornada de aprendizado me proporcionou uma base sólida nas seguintes áreas:
 
 * **Linguagens:** Python, Java, JavaScript
 * **Fundamentos:** Estruturas de Dados, Programação Orientada a Objetos (POO)
-* **Bancos de Dados:** SQL e conceitos de persistência
-* **Frameworks:** Spring Boot e JPA (Java)
+* **Bancos de Dados:** SQL e conceitos de persistência de dados
+* **Frameworks:** Spring Boot e JPA (para desenvolvimento Java)
 
-Estou constantemente aprendendo e aplicando novos conhecimentos no desenvolvimento de projetos práticos, tanto para uso pessoal quanto com potencial comercial. Busco ativamente minha primeira oportunidade profissional para aplicar e expandir minhas habilidades em um ambiente dinâmico e colaborativo.
+Estou constantemente aprendendo e aplicando novos conhecimentos no desenvolvimento de **projetos práticos**, tanto para uso pessoal quanto com potencial comercial. Busco ativamente minha **primeira oportunidade profissional** para aplicar e expandir minhas habilidades em um ambiente dinâmico e colaborativo.
 
 ---
 
 ## ✨ Meus Projetos
 
-Aqui você encontra alguns dos projetos que estou desenvolvendo e que demonstram minhas habilidades. Fique à vontade para explorar e dar feedback!
+Aqui você encontra alguns dos projetos que estou desenvolvendo, os quais demonstram minhas habilidades e aprendizados. Sinta-se à vontade para explorar e oferecer feedback!
 
-### 🔊 Windows Output 1.0
+### 🔊 Windows Output Control
 
-Um aplicativo desenvolvido em **Python** que oferece controle otimizado sobre o volume de saída e entrada (futuramente) do sistema Windows. Ele permite ajustar o áudio com precisão e, de forma adicional, **amplificar o som acima do limite padrão de 100%**, proporcionando uma experiência sonora aprimorada.
+Um aplicativo desenvolvido em **Python** que oferece controle otimizado sobre o volume dos **dispositivos de saída de áudio** do sistema Windows. Ele permite ajustar o áudio com precisão e, de forma adicional, **amplificar o som acima do limite padrão de 100%**, proporcionando uma experiência sonora aprimorada.
 
 * **Tecnologias:** Python, EqualizerPro, NirCMD
 * **Repositório:** [Visite o repositório do projeto](https://github.com/regaliainterno/windows_saida)
+
+### 🎙️ Windows Input Control
+
+Um projeto em desenvolvimento em **Python** focado no controle dos **dispositivos de entrada de áudio** do sistema Windows. O objetivo é permitir o gerenciamento e otimização do volume e de outras configurações de microfones e outras fontes de entrada.
+
+* **Tecnologias:** Python
+* **Repositório:** [Visite o repositório do projeto](https://github.com/regaliainterno/windows_entrada)
 
 ---
 
 ## 🛠️ Tecnologias e Habilidades
 
-Estou constantemente aprendendo e experimentando com diversas tecnologias. Algumas das que mais utilizo e estou estudando incluem:
+Estou em constante aprendizado e experimentação com diversas tecnologias. Algumas das que mais utilizo e estou estudando incluem:
 
 * **Linguagens de Programação:** Python, Java, JavaScript
 * **Frameworks/Bibliotecas:** Spring Boot, JPA
 * **Bancos de Dados:** SQL
 * **Ferramentas:** Git, GitHub
-* **Sistemas Operacionais:** Windows
 * **Conceitos:** Programação Orientada a Objetos (POO), Estruturas de Dados, Desenvolvimento Full Stack
 
 ---
@@ -66,5 +72,5 @@ Adoraria conversar sobre programação, projetos, novas ideias ou oportunidades 
 ---
 
 <p align="center">
-  Feito com ❤️ por Lucas Scremin
+  Feito com ❤️ por Lucas do Nascimento
 </p>
