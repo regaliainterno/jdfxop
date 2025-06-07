@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio de Projetos Python</title>
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        /* Seções */
+        section {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        section:nth-child(even) {
+            background-color: #eef1f4;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 40px;
+            position: relative;
+            display: inline-block;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background-color: #3498db;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* Sobre Mim */
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            text-align: left;
+        }
+
+        .about-content img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #3498db;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-text {
+            max-width: 600px;
+        }
+
+        .about-text p {
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        /* Projetos */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .project-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            text-align: left;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .project-card h3 {
+            color: #3498db;
+            margin-top: 0;
+            font-size: 1.8em;
+        }
+
+        .project-card p {
+            color: #666;
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+
+        .project-card a {
+            display: inline-block;
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .project-card a:hover {
+            background-color: #2980b9;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 30px 0;
+            font-size: 0.9em;
+            margin-top: 50px;
+        }
+
+        footer .social-links a {
+            color: #ecf0f1;
+            margin: 0 10px;
+            font-size: 1.5em;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer .social-links a:hover {
+            color: #3498db;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            h2 {
+                font-size: 2em;
+            }
+
+            .about-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about-content img {
+                margin-bottom: 20px;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Olá! Sou [Seu Nome]</h1>
+            <p>Desenvolvedor Python | Entusiasta de Tecnologia | Criador de Soluções</p>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <div class="about-content">
+                <img src="https://via.placeholder.com/200" alt="Sua Foto de Perfil">
+                <div class="about-text">
+                    <p>
+                        Seja bem-vindo(a) ao meu portfólio! Sou um desenvolvedor apaixonado por Python e por criar soluções inovadoras que facilitam o dia a dia. Com experiência em automação, análise de dados e desenvolvimento web, busco constantemente aprimorar minhas habilidades e aprender novas tecnologias.
+                    </p>
+                    <p>
+                        Aqui você encontrará alguns dos projetos que desenvolvi, demonstrando minha capacidade de transformar ideias em códigos funcionais e eficientes. Sinta-se à vontade para explorar e entrar em contato!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Meus Projetos em Python</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Projeto de Automação Web</h3>
+                    <p>
+                        Um script em Python que automatiza tarefas repetitivas em sites, utilizando bibliotecas como Selenium. Ideal para raspagem de dados ou testes automatizados.
+                    </p>
+                    <a href="https://github.com/seu-usuario/projeto-automacao" target="_blank">Ver Projeto</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Análise de Dados com Pandas</h3>
+                    <p>
+                        Um projeto que demonstra a análise e visualização de dados complexos usando a biblioteca Pandas e Matplotlib, gerando insights valiosos a partir de datasets.
+                    </p>
+                    <a href="https://github.com/seu-usuario/projeto-analise-dados" target="_blank">Ver Projeto</a>
+                </div>
+
+                </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 [Seu Nome]. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="https://github.com/seu-usuario" target="_blank">GitHub</a> |
+                <a href="https://linkedin.com/in/seu-perfil" target="_blank">LinkedIn</a> |
+                <a href="mailto:seu.email@example.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
