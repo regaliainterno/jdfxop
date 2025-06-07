@@ -1,10 +1,10 @@
 # Olá! Eu sou Lucas do Nascimento 👋
 
 <p align="left">
-  <a href="https://github.com/regaliainterno">
+  <a href="https://github.com/regaliainterno" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
   </a>
-  <a href="https://www.linkedin.com/in/lucas-nascimento28/">
+  <a href="https://www.linkedin.com/in/lucas-nascimento28/" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
   </a>
   <a href="mailto:contatolucasscremin@gmail.com">
@@ -16,58 +16,58 @@
 
 ## 🚀 Sobre Mim
 
-Olá! Sou Lucas do Nascimento, um **desenvolvedor Full Stack em formação** de 28 anos, apaixonado por tecnologia e focado em construir soluções robustas e inovadoras. Atualmente, estou aprimorando minhas habilidades em **Python**, **Java** e **JavaScript** através de cursos abrangentes da Udemy.
+Olá! Sou Lucas do Nascimento, um **Desenvolvedor de Software** de 28 anos, apaixonado por tecnologia e focado em construir soluções práticas e eficientes. Tenho sólida formação em **Python**, **Java** e **JavaScript**, com ênfase no desenvolvimento de aplicações robustas.
 
-Minha jornada de aprendizado me proporcionou uma base sólida nas seguintes áreas:
+Minha jornada de aprendizado me proporcionou uma base forte nas seguintes áreas:
 
 * **Linguagens:** Python, Java, JavaScript
-* **Fundamentos:** Estruturas de Dados, Programação Orientada a Objetos (POO)
-* **Bancos de Dados:** SQL e conceitos de persistência de dados
-* **Frameworks:** Spring Boot e JPA (para desenvolvimento Java)
+* **Back-End:** Spring Boot & JPA/Hibernate
+* **Fundamentos:** Programação Orientada a Objetos (POO) & Estruturas de Dados
+* **Bancos de Dados:** SQL e modelagem de dados relacionais
 
-Estou constantemente aprendendo e aplicando novos conhecimentos no desenvolvimento de **projetos práticos**, tanto para uso pessoal quanto com potencial comercial. Busco ativamente minha **primeira oportunidade profissional** para aplicar e expandir minhas habilidades em um ambiente dinâmico e colaborativo.
+Estou constantemente a aplicar meus conhecimentos no desenvolvimento de **projetos práticos** e busco ativamente a minha **primeira oportunidade profissional** para contribuir, aprender e crescer numa equipa colaborativa.
 
 ---
 
 ## ✨ Meus Projetos
 
-Aqui você encontra alguns dos projetos que estou desenvolvendo, os quais demonstram minhas habilidades e aprendizados. Sinta-se à vontade para explorar e oferecer feedback!
+Abaixo estão os meus principais projetos comerciais. Eles demonstram a minha capacidade de desenvolver soluções completas, desde a concepção até a distribuição.
 
-### 🔊 Windows Output Control
+### 🔊 Windows Saída 1.0
 
-Um aplicativo desenvolvido em **Python** que oferece controle otimizado sobre o volume dos **dispositivos de saída de áudio** do sistema Windows. Ele permite ajustar o áudio com precisão e, de forma adicional, **amplificar o som acima do limite padrão de 100%**, proporcionando uma experiência sonora aprimorada.
+Um utilitário comercial desenvolvido em **Python** que oferece controlo avançado sobre os **dispositivos de saída de áudio** do Windows. Sua principal funcionalidade é a capacidade de **amplificar o som do sistema acima do limite padrão de 100%**, resolvendo o problema de mídias com volume baixo.
 
-* **Tecnologias:** Python, EqualizerPro, NirCMD
+* **Tecnologias:** Python, NirCMD e Equalizer APO (Dependência).
 * **Repositório:** [Visite o repositório do projeto](https://github.com/regaliainterno/windows_saida)
 
-### 🎙️ Windows Input Control
+### 🎙️ Windows Entrada 1.0
 
-Um projeto em desenvolvimento em **Python** focado no controle dos **dispositivos de entrada de áudio** do sistema Windows. O objetivo é permitir o gerenciamento e otimização do volume e de outras configurações de microfones e outras fontes de entrada.
+Um utilitário comercial em **Python** focado em oferecer **acesso rápido e simplificado** ao controlo de dispositivos de entrada, como microfones. A aplicação permite ajustar o volume (0-100%) e silenciar o microfone através de uma interface limpa, otimizando o fluxo de trabalho para reuniões e transmissões.
 
-* **Tecnologias:** Python
+* **Tecnologias:** Python e NirCMD.
 * **Repositório:** [Visite o repositório do projeto](https://github.com/regaliainterno/windows_entrada)
 
 ---
 
 ## 🛠️ Tecnologias e Habilidades
 
-Estou em constante aprendizado e experimentação com diversas tecnologias. Algumas das que mais utilizo e estou estudando incluem:
+Estas são as tecnologias com as quais tenho trabalhado e estudado:
 
-* **Linguagens de Programação:** Python, Java, JavaScript
-* **Frameworks/Bibliotecas:** Spring Boot, JPA
-* **Bancos de Dados:** SQL
-* **Ferramentas:** Git, GitHub
-* **Conceitos:** Programação Orientada a Objetos (POO), Estruturas de Dados, Desenvolvimento Full Stack
+<p align="left">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+  <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white" alt="Spring">
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+  <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+</p>
 
 ---
 
-## ✉️ Conecte-se Comigo
+## 📫 Vamos Conversar?
 
-Adoraria conversar sobre programação, projetos, novas ideias ou oportunidades de trabalho!
-
-* **E-mail:** contatolucasscremin@gmail.com
-* **GitHub:** [Meu Perfil no GitHub](https://github.com/regaliainterno)
-* **LinkedIn:** [Lucas Nascimento](https://www.linkedin.com/in/lucas-nascimento28/)
+Estou aberto a novas oportunidades, colaborações e adoro trocar ideias sobre tecnologia. Sinta-se à vontade para me contactar através de um dos canais no topo desta página ou diretamente pelo e-mail: **contatolucasscremin@gmail.com**.
 
 ---
 
