@@ -3,59 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de [Seu Nome], desenvolvedor Python focado em criar ferramentas práticas para o dia a dia e otimização de sistemas, incluindo controle de áudio para Windows.">
-    <title>Portfólio de Projetos Python | [Seu Nome]</title>
+    <meta name="description" content="Portfólio de jdfxop, estudante de backend (Python, Java, JavaScript) focado em criar ferramentas práticas para o dia a dia e otimização de sistemas, incluindo controle de áudio para Windows.">
+    <title>Portfólio de Projetos | jdfxop</title>
     <style>
-        /* Estilos gerais */
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Segoe UI', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f7f6;
-            color: #333;
-            line-height: 1.6;
+            background: linear-gradient(135deg, #f4f7f6 60%, #eaf6fb 100%);
+            color: #23272f;
+            line-height: 1.7;
         }
 
         .container {
-            max-width: 1100px;
+            max-width: 1000px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 24px;
         }
 
-        /* Cabeçalho */
         header {
-            background-color: #2c3e50;
+            background: linear-gradient(90deg, #2c3e50 60%, #3498db 100%);
             color: #ecf0f1;
-            padding: 40px 0;
+            padding: 48px 0 32px;
             text-align: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 8px rgba(44, 62, 80, 0.07);
         }
 
         header h1 {
             margin: 0;
-            font-size: 3em;
-            letter-spacing: 1px;
+            font-size: 2.7em;
+            letter-spacing: 0.5px;
+            font-weight: 700;
         }
 
         header p {
-            font-size: 1.2em;
-            margin-top: 10px;
+            font-size: 1.15em;
+            margin-top: 12px;
+            color: #d5e4ee;
         }
 
-        /* Seções */
         section {
-            padding: 60px 0;
+            padding: 48px 0 32px;
             text-align: center;
         }
 
         section:nth-child(even) {
-            background-color: #eef1f4;
+            background-color: #f7fafd;
         }
 
         h2 {
-            font-size: 2.5em;
-            color: #2c3e50;
-            margin-bottom: 40px;
+            font-size: 2.1em;
+            color: #263248;
+            margin-bottom: 32px;
             position: relative;
             display: inline-block;
         }
@@ -63,158 +62,159 @@
         h2::after {
             content: '';
             position: absolute;
-            width: 80px;
-            height: 4px;
+            width: 64px;
+            height: 3px;
             background-color: #3498db;
             bottom: -10px;
             left: 50%;
             transform: translateX(-50%);
+            border-radius: 2px;
         }
 
         /* Sobre Mim */
         .about-content {
             display: flex;
             flex-wrap: wrap;
-            align-items: center;
+            align-items: flex-start;
             justify-content: center;
-            gap: 40px;
+            gap: 32px;
             text-align: left;
         }
 
-        .about-content img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 5px solid #3498db;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
         .about-text {
-            max-width: 600px;
+            max-width: 750px;
+            margin: 0 auto;
         }
 
         .about-text p {
-            font-size: 1.1em;
-            color: #555;
-            margin-bottom: 15px; /* Adicionado para espaçamento entre parágrafos */
+            font-size: 1.07em;
+            color: #4a4a4a;
+            margin-bottom: 16px;
         }
-        
+
         .skills-list {
             list-style: none;
             padding: 0;
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
-            margin-top: 20px;
+            margin: 20px 0 0 0;
+            justify-content: flex-start;
         }
 
         .skills-list li {
-            background-color: #3498db;
+            background: linear-gradient(90deg, #3498db 60%, #1abc9c 100%);
             color: #fff;
             padding: 8px 15px;
             border-radius: 5px;
-            font-size: 0.9em;
-            font-weight: bold;
+            font-size: 0.98em;
+            font-weight: 600;
+            box-shadow: 0 2px 6px rgba(44, 62, 80, 0.05);
         }
 
         /* Projetos */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
+            gap: 32px;
+            margin-top: 32px;
         }
 
         .project-card {
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 30px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 14px rgba(44, 62, 80, 0.11);
+            padding: 28px 22px 22px;
             text-align: left;
-            transition: transform 0.3s ease-in-out;
+            transition: transform 0.23s cubic-bezier(.23,1.01,.32,1), box-shadow 0.23s;
+            border: 1.5px solid #e5ecf2;
         }
 
         .project-card:hover {
-            transform: translateY(-10px);
+            transform: translateY(-7px) scale(1.02);
+            box-shadow: 0 8px 20px rgba(44,62,80,0.17);
+            border-color: #3498db;
         }
 
         .project-card h3 {
             color: #3498db;
             margin-top: 0;
-            font-size: 1.8em;
+            margin-bottom: 10px;
+            font-size: 1.35em;
         }
 
         .project-card p {
-            color: #666;
-            font-size: 1em;
-            margin-bottom: 15px; /* Ajustado para espaçamento */
+            color: #464646;
+            font-size: 1.04em;
+            margin-bottom: 14px;
         }
 
         .project-card .technologies {
-            font-size: 0.9em;
+            font-size: 0.93em;
             color: #777;
-            margin-bottom: 20px;
+            margin-bottom: 18px;
         }
 
         .project-card a {
             display: inline-block;
-            background-color: #3498db;
+            background: linear-gradient(90deg, #3498db 60%, #1abc9c 100%);
             color: #fff;
-            padding: 10px 20px;
+            padding: 9px 20px;
             border-radius: 5px;
             text-decoration: none;
             font-weight: bold;
-            transition: background-color 0.3s ease;
+            letter-spacing: 0.3px;
+            font-size: 1em;
+            transition: background 0.3s;
         }
 
         .project-card a:hover {
-            background-color: #2980b9;
+            background: #217dbb;
         }
 
-        /* Rodapé */
         footer {
-            background-color: #2c3e50;
+            background: #2c3e50;
             color: #ecf0f1;
             text-align: center;
-            padding: 30px 0;
-            font-size: 0.9em;
-            margin-top: 50px;
+            padding: 28px 0 16px;
+            font-size: 0.97em;
+            margin-top: 40px;
+            border-top: 2px solid #3498db;
+        }
+
+        footer .social-links {
+            margin: 18px 0 0 0;
         }
 
         footer .social-links a {
             color: #ecf0f1;
             margin: 0 10px;
-            font-size: 1.5em;
+            font-size: 1.25em;
             text-decoration: none;
-            transition: color 0.3s ease;
+            transition: color 0.24s;
         }
 
         footer .social-links a:hover {
-            color: #3498db;
+            color: #1abc9c;
         }
 
-        /* Responsividade */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2.5em;
+        @media (max-width: 900px) {
+            .container {
+                padding: 14px;
             }
-
-            h2 {
-                font-size: 2em;
+            .about-text {
+                max-width: 100%;
             }
-
-            .about-content {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .about-content img {
-                margin-bottom: 20px;
-            }
-
+        }
+        @media (max-width: 700px) {
             .projects-grid {
                 grid-template-columns: 1fr;
+            }
+            section {
+                padding: 32px 0 20px;
+            }
+            h2 {
+                font-size: 1.5em;
             }
         }
     </style>
@@ -223,8 +223,8 @@
 
     <header>
         <div class="container">
-            <h1>Olá! Sou [Seu Nome]</h1>
-            <p>Desenvolvedor Python | Focado em Otimização e Ferramentas Práticas</p>
+            <h1>Olá! Sou jdfxop</h1>
+            <p>Estudante de Python, Java, JavaScript | Backend em formação | Criador de soluções para Windows</p>
         </div>
     </header>
 
@@ -232,17 +232,19 @@
         <div class="container">
             <h2>Sobre Mim</h2>
             <div class="about-content">
-                <img src="https://via.placeholder.com/200" alt="Foto de perfil de [Seu Nome], desenvolvedor Python">
                 <div class="about-text">
                     <p>
-                        Bem-vindo(a) ao meu portfólio! Sou um desenvolvedor Python que adora criar **soluções práticas e inteligentes** para o dia a dia. Meu foco está em transformar ideias em aplicativos funcionais que simplificam tarefas e oferecem novas possibilidades.
+                        Bem-vindo(a) ao meu portfólio! Sou <strong>jdfxop</strong>, estudante focado em backend, atualmente aprendendo Python, Java e JavaScript. Tenho paixão por criar <strong>aplicativos que ajudam a resolver problemas do Windows</strong> e tornar o dia a dia mais prático.
                     </p>
                     <p>
-                        Acredito que a tecnologia deve ser uma aliada, e é por isso que meus projetos são pensados para **resolver problemas reais e otimizar a experiência do usuário**. Explore abaixo para ver como busco inovar, especialmente na interação com sistemas operacionais.
+                        Acredito que a tecnologia pode facilitar a vida, por isso busco desenvolver ferramentas úteis, principalmente para quem enfrenta desafios com sistemas operacionais.
                     </p>
-                    <h3>Minhas Habilidades:</h3>
+                    <h3 style="margin-top: 30px;">Minhas Habilidades:</h3>
                     <ul class="skills-list">
                         <li>Python</li>
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                        <li>Backend em formação</li>
                         <li>Automação de Tarefas</li>
                         <li>Manipulação de Áudio (Windows)</li>
                         <li>Controle de Dispositivos de Entrada</li>
@@ -261,39 +263,64 @@
             <div class="projects-grid">
                 
                 <div class="project-card">
+                    <h3>Controlador de Volume de Aplicativos de Entrada (Windows)</h3>
+                    <p>
+                        Aplicativo desenvolvido para <strong>controlar o volume dos aplicativos de entrada do Windows</strong>, permitindo um gerenciamento mais preciso e personalizado dos dispositivos de áudio de entrada, como microfones e outros dispositivos de captura de som.
+                    </p>
+                    <p>
+                        <strong>Minha visão:</strong> Este projeto surgiu da necessidade de ter um controle mais detalhado sobre o volume dos aplicativos de entrada, algo que o Windows não oferece nativamente. Ideal para quem realiza chamadas, gravações ou transmissões e precisa ajustar o volume de entrada de diferentes aplicativos sem complicação.
+                    </p>
+                    <p class="technologies"><strong>Tecnologias:</strong> Python, Bibliotecas de Controle de Áudio do Windows (<code>pycaw</code>, <code>pyaudio</code>, <code>comtypes</code>), <code>tkinter</code> (para GUI)</p>
+                    <a href="https://github.com/regaliainterno/windows_entrada" target="_blank">Ver no GitHub</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Controlador de Volume de Aplicativos de Saída (Windows)</h3>
+                    <p>
+                        Aplicativo criado para <strong>controlar o volume dos aplicativos de saída do Windows</strong>, permitindo um ajuste individualizado de cada aplicativo que emite som pelo sistema, como players de música, jogos ou navegadores.
+                    </p>
+                    <p>
+                        <strong>Minha visão:</strong> Desenvolvi este projeto para facilitar o gerenciamento do volume de diferentes programas, algo que o Windows não faz de forma prática nativamente. Ideal para quem precisa equilibrar volumes entre apps, seja para produtividade, lazer ou comunicação.
+                    </p>
+                    <p class="technologies"><strong>Tecnologias:</strong> Python, Bibliotecas de Controle de Áudio do Windows (<code>pycaw</code>, <code>pyaudio</code>, <code>comtypes</code>), <code>tkinter</code> (para GUI)</p>
+                    <a href="https://github.com/regaliainterno/windows_saida" target="_blank">Ver no GitHub</a>
+                </div>
+
+                <div class="project-card">
                     <h3>Controlador de Volume Mestre (com Boost)</h3>
                     <p>
-                        Um aplicativo em Python para Windows que oferece controle total sobre o **volume de saída do sistema**. Além das funções básicas de ajuste, ele possui um recurso exclusivo para **aumentar o volume acima do limite padrão do Windows**.
+                        Um aplicativo em Python para Windows que oferece controle total sobre o <strong>volume de saída do sistema</strong>. Além das funções básicas de ajuste, ele possui um recurso exclusivo para <strong>aumentar o volume acima do limite padrão do Windows</strong>.
                     </p>
                     <p>
-                        **Minha visão:** Desenvolvi este app pensando em otimizar a experiência em cenários onde cada decibel faz a diferença, como em **jogos FPS**, onde a audição de passos e sons ambientes pode ser crucial para a vantagem competitiva.
+                        <strong>Minha visão:</strong> Desenvolvi este app pensando em otimizar a experiência em cenários onde cada decibel faz a diferença, como em <strong>jogos FPS</strong>, onde a audição de passos e sons ambientes pode ser crucial para a vantagem competitiva.
                     </p>
-                    <p class="technologies">**Tecnologias:** Python, Bibliotecas de Controle de Áudio do Windows (ex: `pycaw`, `pyaudio` ou `comtypes`), `tkinter` (para GUI)</p>
-                    <a href="https://github.com/seu-usuario/app-volume-windows" target="_blank">Ver no GitHub</a>
+                    <p class="technologies"><strong>Tecnologias:</strong> Python, Bibliotecas de Controle de Áudio do Windows (<code>pycaw</code>, <code>pyaudio</code> ou <code>comtypes</code>), <code>tkinter</code> (para GUI)</p>
+                    <a href="https://github.com/jdfxop/app-volume-windows" target="_blank">Ver no GitHub</a>
                 </div>
 
                 <div class="project-card">
                     <h3>Mantenedor de Volume de Microfone</h3>
                     <p>
-                        Este aplicativo Python resolve um problema comum no Windows: a **redução automática do volume do microfone**. Ele garante que o **volume do seu dispositivo de entrada permaneça em 100%**, mesmo quando o sistema tenta ajustá-lo.
+                        Este aplicativo Python resolve um problema comum no Windows: a <strong>redução automática do volume do microfone</strong>. Ele garante que o <strong>volume do seu dispositivo de entrada permaneça em 100%</strong>, mesmo quando o sistema tenta ajustá-lo.
                     </p>
                     <p>
-                        **Minha visão:** Criei esta ferramenta para garantir uma comunicação clara e ininterrupta em chamadas, gravações ou transmissões. É ideal para quem precisa de estabilidade no áudio do microfone sem interrupções indesejadas.
+                        <strong>Minha visão:</strong> Criei esta ferramenta para garantir uma comunicação clara e ininterrupta em chamadas, gravações ou transmissões. É ideal para quem precisa de estabilidade no áudio do microfone sem interrupções indesejadas.
                     </p>
-                    <p class="technologies">**Tecnologias:** Python, Bibliotecas de Controle de Áudio do Windows (ex: `pycaw`, `pyaudio` ou `comtypes`), `tkinter` (para GUI)</p>
-                    <a href="https://github.com/seu-usuario/app-microfone-windows" target="_blank">Ver no GitHub</a>
+                    <p class="technologies"><strong>Tecnologias:</strong> Python, Bibliotecas de Controle de Áudio do Windows (<code>pycaw</code>, <code>pyaudio</code> ou <code>comtypes</code>), <code>tkinter</code> (para GUI)</p>
+                    <a href="https://github.com/jdfxop/app-microfone-windows" target="_blank">Ver no GitHub</a>
                 </div>
 
-                </div>
+            </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 [Seu Nome]. Todos os direitos reservados.</p>
+            <p>&copy; 2025 jdfxop. Todos os direitos reservados.</p>
             <div class="social-links">
-                <a href="https://github.com/seu-usuario" target="_blank">GitHub</a> |
+                <a href="https://github.com/jdfxop" target="_blank">GitHub</a> |
                 <a href="https://linkedin.com/in/seu-perfil" target="_blank">LinkedIn</a> |
+                <a href="https://instagram.com/jdfxop" target="_blank">Instagram</a> |
                 <a href="mailto:seu.email@example.com">Email</a>
             </div>
         </div>
