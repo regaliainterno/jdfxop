@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio de Projetos Python</title>
+    <meta name="description" content="Portfólio de projetos Python de [Seu Nome]. Desenvolvedor Python com experiência em automação web, análise de dados e desenvolvimento web.">
+    <title>Portfólio de Projetos Python | [Seu Nome]</title>
     <style>
         /* Estilos gerais */
         body {
@@ -96,6 +97,25 @@
         .about-text p {
             font-size: 1.1em;
             color: #555;
+            margin-bottom: 15px; /* Adicionado para espaçamento entre parágrafos */
+        }
+        
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .skills-list li {
+            background-color: #3498db;
+            color: #fff;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-size: 0.9em;
+            font-weight: bold;
         }
 
         /* Projetos */
@@ -128,6 +148,12 @@
         .project-card p {
             color: #666;
             font-size: 1em;
+            margin-bottom: 15px; /* Ajustado para espaçamento */
+        }
+
+        .project-card .technologies {
+            font-size: 0.9em;
+            color: #777;
             margin-bottom: 20px;
         }
 
@@ -206,14 +232,29 @@
         <div class="container">
             <h2>Sobre Mim</h2>
             <div class="about-content">
-                <img src="https://via.placeholder.com/200" alt="Sua Foto de Perfil">
+                <img src="https://via.placeholder.com/200" alt="Foto de perfil de [Seu Nome], desenvolvedor Python">
                 <div class="about-text">
                     <p>
-                        Seja bem-vindo(a) ao meu portfólio! Sou um desenvolvedor apaixonado por Python e por criar soluções inovadoras que facilitam o dia a dia. Com experiência em automação, análise de dados e desenvolvimento web, busco constantemente aprimorar minhas habilidades e aprender novas tecnologias.
+                        Seja bem-vindo(a) ao meu portfólio! Sou um desenvolvedor apaixonado por **Python** e por criar soluções inovadoras que facilitam o dia a dia. Minha jornada na programação começou com o fascínio em **automatizar tarefas repetitivas**, e desde então expandi minhas habilidades para **desenvolvimento web** e **análise de dados**.
                     </p>
                     <p>
-                        Aqui você encontrará alguns dos projetos que desenvolvi, demonstrando minha capacidade de transformar ideias em códigos funcionais e eficientes. Sinta-se à vontade para explorar e entrar em contato!
+                        Aqui você encontrará alguns dos projetos que desenvolvi, demonstrando minha capacidade de transformar ideias em códigos funcionais e eficientes. Busco constantemente aprimorar minhas habilidades e aprender novas tecnologias para resolver desafios complexos. Sinta-se à vontade para explorar!
                     </p>
+                    <h3>Minhas Habilidades:</h3>
+                    <ul class="skills-list">
+                        <li>Python</li>
+                        <li>Flask</li>
+                        <li>Django</li>
+                        <li>Selenium</li>
+                        <li>Pandas</li>
+                        <li>NumPy</li>
+                        <li>Matplotlib</li>
+                        <li>SQLAlchemy</li>
+                        <li>Git & GitHub</li>
+                        <li>Automação</li>
+                        <li>Análise de Dados</li>
+                        <li>Web Scraping</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -223,20 +264,32 @@
         <div class="container">
             <h2>Meus Projetos em Python</h2>
             <div class="projects-grid">
+                
                 <div class="project-card">
                     <h3>Projeto de Automação Web</h3>
                     <p>
-                        Um script em Python que automatiza tarefas repetitivas em sites, utilizando bibliotecas como Selenium. Ideal para raspagem de dados ou testes automatizados.
+                        Um script em Python que automatiza tarefas repetitivas em sites, utilizando a biblioteca **Selenium**. Ele foi desenvolvido para **coletar dados de produtos em e-commerce**, otimizando o processo de pesquisa e comparação de preços.
                     </p>
+                    <p class="technologies">**Tecnologias:** Python, Selenium, Pandas, BeautifulSoup</p>
                     <a href="https://github.com/seu-usuario/projeto-automacao" target="_blank">Ver Projeto</a>
                 </div>
 
                 <div class="project-card">
-                    <h3>Análise de Dados com Pandas</h3>
+                    <h3>Análise e Visualização de Dados</h3>
                     <p>
-                        Um projeto que demonstra a análise e visualização de dados complexos usando a biblioteca Pandas e Matplotlib, gerando insights valiosos a partir de datasets.
+                        Um projeto que demonstra a análise e visualização de dados complexos usando as bibliotecas **Pandas** e **Matplotlib**. Através dele, pude identificar **tendências de vendas sazonais** em um dataset, gerando insights valiosos para tomada de decisão.
                     </p>
+                    <p class="technologies">**Tecnologias:** Python, Pandas, NumPy, Matplotlib, Seaborn</p>
                     <a href="https://github.com/seu-usuario/projeto-analise-dados" target="_blank">Ver Projeto</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>API RESTful com Flask</h3>
+                    <p>
+                        Desenvolvimento de uma API RESTful simples usando o microframework **Flask** para gerenciar uma coleção de livros. Inclui operações CRUD (Criar, Ler, Atualizar, Deletar) e persistência de dados com **SQLAlchemy**.
+                    </p>
+                    <p class="technologies">**Tecnologias:** Python, Flask, SQLAlchemy, REST APIs, SQLite</p>
+                    <a href="https://github.com/seu-usuario/api-flask-livros" target="_blank">Ver Projeto</a>
                 </div>
 
                 </div>
