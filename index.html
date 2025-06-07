@@ -171,7 +171,7 @@
             border: var(--card-border);
             display: flex;
             flex-direction: column;
-            min-height: 370px;
+            min-height: 470px;
             transition: transform 0.19s cubic-bezier(.23,1.01,.32,1), box-shadow 0.19s;
             position: relative;
         }
@@ -179,6 +179,16 @@
             transform: translateY(-10px) scale(1.015);
             box-shadow: 0 10px 28px rgba(44,62,80,0.19);
             border-color: var(--primary);
+        }
+        .app-video {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            background: #222b;
+            border-radius: 9px;
+            margin-bottom: 14px;
+            overflow: hidden;
+            box-shadow: 0 3px 18px #0002;
+            border: 1.5px solid #eaf0fa;
         }
         .app-card h3 {
             color: var(--primary);
@@ -310,6 +320,10 @@
 
                     <div class="app-card">
                         <span class="tag">windows_saida</span>
+                        <div class="app-video">
+                            <!-- Vídeo de demonstração genérico, pode trocar depois -->
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/F4tHL8reNCs" title="Demonstração windows_saida" frameborder="0" allowfullscreen></iframe>
+                        </div>
                         <h3>Controle Profissional dos Dispositivos de Saída</h3>
                         <p>
                             Manipule qualquer dispositivo de <strong>áudio de saída</strong> do Windows. Ajuste o volume via slidebar, mute/desmute com um clique e utilize o inovador <b>boost</b>: aumente o volume até <strong>50db acima dos 100%</strong> permitidos pelo sistema. Ideal para gamers (FPS), videoconferências e quem busca áudio máximo.
@@ -325,6 +339,10 @@
 
                     <div class="app-card">
                         <span class="tag">windows_entrada</span>
+                        <div class="app-video">
+                            <!-- Outro vídeo genérico de demonstração -->
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/2Ji-clqUYnA" title="Demonstração windows_entrada" frameborder="0" allowfullscreen></iframe>
+                        </div>
                         <h3>Controle Absoluto do Microfone</h3>
                         <p>
                             Pare de sofrer com o Windows baixando sozinho o volume do microfone. Tenha controle total do seu dispositivo de entrada e mantenha o microfone sempre em 100%, evitando cortes e surpresas em reuniões, lives ou gravações.
