@@ -57,12 +57,11 @@
             position: relative;
             text-align: center;
             color: var(--white);
-            min-height: 60vh; /* Altura robusta e responsiva */
-            max-height: 500px;
+            height: 400px; /* ALTURA FIXA AJUSTADA */
             display: flex;
             align-items: center;
             justify-content: center;
-            overflow: hidden; /* Garante que a animação não ultrapasse o header */
+            overflow: hidden;
         }
 
         .header__background {
@@ -71,12 +70,10 @@
             left: 0;
             width: 100%;
             height: 100%;
-            /* Nova imagem de fundo e overlay mais sofisticado */
             background-image: linear-gradient(135deg, rgba(39, 174, 96, 0.7), rgba(0, 0, 0, 0.6)), url(https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=1740&q=80);
             background-size: cover;
             background-position: center;
             z-index: 1;
-            /* Animação de zoom sutil */
             animation: kenburnsEffect 20s ease-out alternate infinite;
         }
 
@@ -84,7 +81,6 @@
             position: relative;
             z-index: 2;
             padding: 20px;
-            /* Animação de entrada */
             animation: fadeInUp 1s ease-out 0.2s forwards;
             opacity: 0;
         }
@@ -292,7 +288,7 @@
 
         /* ===== Responsividade ===== */
         @media (max-width: 768px) {
-            .header { min-height: 50vh; }
+            .header { height: 350px; } /* Altura ajustada para telas menores */
             .header__title { font-size: 2.2em; }
             .section__title { font-size: 1.8em; }
             .projects__grid { grid-template-columns: 1fr; }
@@ -304,7 +300,7 @@
     <header class="header">
         <div class="header__background"></div>
         <div class="header__content">
-            <h1 class="header__title">Automações com Python</h1>
+            <h1 class="header__title">IA e Automações com Python</h1>
             <p class="header__subtitle">Desenvolvendo soluções inteligentes para otimizar processos e impulsionar a produtividade no Windows.</p>
             <div class="header__links">
                 <a href="https://github.com/regaliainterno" target="_blank">GitHub</a>
