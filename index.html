@@ -3,374 +3,393 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de jdfxop - Projetos avançados em Python para controle e automação de áudio no Windows.">
-    <title>Projetos Python | jdfxop</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;500;400&display=swap" rel="stylesheet">
+    <meta name="description" content="Portfólio de regaliainterno - Projetos avançados em Python para IA e automação no Windows.">
+    <title>Projetos Python | regaliainterno</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
+        /* ===== Configurações Globais e Variáveis de Cor ===== */
         :root {
-            --primary: #2563eb;
-            --accent: #06b6d4;
-            --bg-gradient: linear-gradient(120deg, #f6fafc 70%, #eaf6fb 100%);
-            --white: #fff;
-            --dark: #23272f;
-            --gray: #5a6270;
-            --shadow: 0 4px 18px rgba(44,62,80,0.09);
-            --card-border: 1.5px solid #e5ecf2;
+            --green-primary: #27ae60;
+            --green-accent: #2ecc71;
+            --bg-color: #f8f9fa;
+            --text-dark: #34495e;
+            --text-light: #7f8c8d;
+            --white: #ffffff;
+            --border-color: #e9ecef;
+            --shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
         }
-        * { box-sizing: border-box; }
-        body {
+
+        * {
             margin: 0;
-            font-family: 'Montserrat', Arial, sans-serif;
-            background: var(--bg-gradient);
-            color: var(--dark);
-        }
-        header {
-            background: linear-gradient(90deg, var(--primary) 60%, var(--accent) 100%);
-            color: var(--white);
-            text-align: center;
             padding: 0;
-            box-shadow: 0 2px 12px rgba(44,62,80,0.07);
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Montserrat', Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-dark);
+        }
+        
+        /* ===== Animações ===== */
+        @keyframes kenburnsEffect {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.1); }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ===== Cabeçalho com Banner (Header) ===== */
+        .header {
             position: relative;
-        }
-        .banner-img-wrapper {
-            width: 100%;
-            height: 330px;
-            overflow: hidden;
-            border-bottom: 6px solid var(--primary);
-            background: #1e293b;
-        }
-        .banner-img-wrapper img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-            opacity: 0.88;
-            filter: brightness(0.65) contrast(1.15);
-        }
-        .header-content {
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
+            text-align: center;
+            color: var(--white);
+            height: 400px; /* ALTURA FIXA AJUSTADA */
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
-            pointer-events: none;
+            overflow: hidden;
         }
-        .header-content h1 {
-            font-weight: 700;
-            font-size: 2.85em;
-            margin: 0 0 10px 0;
-            letter-spacing: 1.5px;
-            color: #fff;
-            text-shadow: 0 4px 22px #172344bb, 0 1px 2px #0007;
-            pointer-events: auto;
+
+        .header__background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(135deg, rgba(39, 174, 96, 0.7), rgba(0, 0, 0, 0.6)), url(https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=1740&q=80);
+            background-size: cover;
+            background-position: center;
+            z-index: 1;
+            animation: kenburnsEffect 20s ease-out alternate infinite;
         }
-        .header-content p {
-            font-weight: 400;
-            font-size: 1.25em;
-            margin: 0 0 25px 0;
-            color: #e0f2ff;
-            background: rgba(22,32,44,0.28);
-            border-radius: 10px;
-            padding: 10px 24px;
-            display: inline-block;
-            box-shadow: 0 2px 7px #0002;
-            pointer-events: auto;
-        }
-        .header-social {
-            margin-top: 5px;
-            pointer-events: auto;
-        }
-        .header-social a {
-            display: inline-block;
-            background: var(--accent);
-            color: #fff;
-            font-size: 1.25em;
-            font-weight: 600;
-            border-radius: 5px;
-            text-decoration: none;
-            margin: 0 8px;
-            padding: 8px 22px;
-            box-shadow: 0 1px 8px #1112;
-            transition: background 0.22s, color 0.22s;
-        }
-        .header-social a:hover {
-            background: var(--primary);
-            color: #fff;
-        }
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 40px 16px 40px 16px;
-        }
-        h2 {
-            font-size: 2.1em;
-            font-weight: 700;
-            color: var(--primary);
-            margin-bottom: 38px;
-            letter-spacing: 1px;
+
+        .header__content {
             position: relative;
-            display: inline-block;
-            background: none;
+            z-index: 2;
+            padding: 20px;
+            animation: fadeInUp 1s ease-out 0.2s forwards;
+            opacity: 0;
         }
-        h2::after {
-            content: '';
-            display: block;
-            width: 64px;
-            height: 3px;
-            border-radius: 2px;
-            background: linear-gradient(90deg, var(--primary), var(--accent));
-            margin: 14px auto 0;
+
+        .header__title {
+            font-size: 3em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
         }
-        .about {
-            background: var(--white);
-            border-radius: 16px;
-            box-shadow: var(--shadow);
-            padding: 44px 36px 36px 36px;
-            margin-bottom: 56px;
-            max-width: 900px;
+
+        .header__subtitle {
+            font-size: 1.2em;
+            font-weight: 400;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            max-width: 600px;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        .header__links a {
+            color: var(--white);
+            background-color: rgba(255, 255, 255, 0.15);
+            padding: 10px 25px;
+            margin: 0 10px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 500;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: background-color 0.3s ease;
+        }
+
+        .header__links a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        /* ===== Estrutura Principal (Container) ===== */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .section {
+            margin-bottom: 60px;
             text-align: center;
         }
-        .about p {
-            color: var(--gray);
-            font-size: 1.13em;
-            margin: 0 0 18px 0;
-            line-height: 1.7;
-        }
-        .skills-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin: 22px 0 0 0;
-            padding: 0;
-            list-style: none;
-            justify-content: center;
-        }
-        .skills-list li {
-            background: linear-gradient(90deg, var(--primary) 60%, var(--accent) 100%);
-            color: var(--white);
-            padding: 8px 17px;
-            border-radius: 6px;
-            font-size: 1em;
-            font-weight: 600;
-            letter-spacing: 0.5px;
-            box-shadow: 0 2px 5px rgba(44,62,80,0.04);
-        }
-        .apps-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 40px;
-        }
-        .app-card {
-            background: var(--white);
-            border-radius: 16px;
-            box-shadow: var(--shadow);
-            padding: 36px 32px 30px 32px;
-            border: var(--card-border);
-            display: flex;
-            flex-direction: column;
-            min-height: 470px;
-            transition: transform 0.19s cubic-bezier(.23,1.01,.32,1), box-shadow 0.19s;
+
+        .section__title {
+            font-size: 2.2em;
+            margin-bottom: 15px;
+            color: var(--green-primary);
+            display: inline-block;
             position: relative;
         }
-        .app-card:hover {
-            transform: translateY(-10px) scale(1.015);
-            box-shadow: 0 10px 28px rgba(44,62,80,0.19);
-            border-color: var(--primary);
+
+        .section__title::after {
+            content: '';
+            position: absolute;
+            width: 70%;
+            height: 3px;
+            background: var(--green-accent);
+            bottom: -8px;
+            left: 15%;
+            border-radius: 2px;
         }
-        .app-video {
-            width: 100%;
-            aspect-ratio: 16 / 9;
-            background: #222b;
-            border-radius: 9px;
-            margin-bottom: 14px;
-            overflow: hidden;
-            box-shadow: 0 3px 18px #0002;
-            border: 1.5px solid #eaf0fa;
+
+        /* ===== Seção Sobre Mim (About) ===== */
+        .about__content {
+            max-width: 800px;
+            margin: 40px auto 0;
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: var(--text-light);
         }
-        .app-card h3 {
-            color: var(--primary);
-            font-size: 1.18em;
-            margin: 0 0 11px 0;
-            font-weight: 700;
-            letter-spacing: 0.4px;
+
+        .about__skills-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 30px;
         }
-        .app-card p {
-            color: #484848;
-            font-size: 1.08em;
-            margin: 0 0 13px 0;
-            line-height: 1.65;
-        }
-        .app-card .tag {
-            display: inline-block;
-            background: var(--accent);
+
+        .about__skill-item {
+            background-color: var(--green-primary);
             color: var(--white);
-            font-size: 0.95em;
+            padding: 8px 18px;
+            border-radius: 50px;
             font-weight: 500;
-            padding: 4px 13px;
+            font-size: 0.95em;
+        }
+
+        /* ===== Seção de Projetos (Projects) ===== */
+        .projects__grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+            text-align: left;
+        }
+
+        .project-card {
+            background: var(--white);
+            border: 1px solid var(--border-color);
             border-radius: 12px;
-            margin-bottom: 10px;
-            letter-spacing: 0.5px;
-            margin-right: 6px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        .app-card .technologies {
-            font-size: 0.97em;
-            color: #7a8ca7;
-            margin-bottom: 18px;
-            margin-top: 10px;
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
         }
-        .app-card a {
-            margin-top: auto;
+        
+        .project-card__tag {
             align-self: flex-start;
-            background: linear-gradient(90deg, var(--primary), var(--accent));
+            background-color: var(--green-accent);
             color: var(--white);
-            padding: 10px 22px;
-            border-radius: 6px;
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-size: 0.85em;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .project-card__title {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            color: var(--text-dark);
+        }
+
+        .project-card__description {
+            font-size: 1em;
+            line-height: 1.7;
+            color: var(--text-light);
+            flex-grow: 1; /* Faz a descrição ocupar o espaço disponível */
+            margin-bottom: 20px;
+        }
+        
+        .project-card__features {
+            font-size: 0.95em;
+            color: var(--text-light);
+            list-style-position: inside;
+            padding-left: 0;
+            margin-bottom: 20px;
+        }
+        
+        .project-card__features li {
+             margin-bottom: 5px;
+        }
+
+        .project-card__technologies {
+            font-size: 0.9em;
+            color: var(--text-light);
+            margin-bottom: 25px;
+        }
+
+        .project-card__button {
+            margin-top: auto; /* Empurra o botão para baixo */
+            align-self: flex-start;
+            background: var(--green-primary);
+            color: var(--white);
+            padding: 12px 28px;
+            border-radius: 50px;
             text-decoration: none;
-            font-weight: bold;
-            font-size: 1.06em;
-            letter-spacing: 0.3px;
-            transition: background 0.3s;
-            box-shadow: 0 1px 4px rgba(44,62,80,0.08);
-            border: none;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
         }
-        .app-card a:hover {
-            background: #1749ad;
+        
+        .project-card__button:hover {
+            background: #219d55; /* Tom de verde um pouco mais escuro para o hover */
         }
-        footer {
-            background: var(--primary);
+        
+        /* ===== Rodapé (Footer) ===== */
+        .footer {
+            background-color: #2c3e50;
             color: var(--white);
             text-align: center;
-            padding: 28px 0 14px;
-            font-size: 1em;
-            margin-top: 56px;
-            border-top: 2px solid var(--accent);
+            padding: 40px 20px;
+            margin-top: 60px;
         }
-        .social-links {
-            margin: 18px 0 0 0;
+        
+        .footer__copyright {
+            margin-bottom: 15px;
+            opacity: 0.8;
         }
-        .social-links a {
+
+        .footer__links a {
             color: var(--white);
-            margin: 0 13px;
-            font-size: 1.16em;
             text-decoration: none;
-            transition: color 0.19s;
+            margin: 0 15px;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
         }
-        .social-links a:hover {
-            color: var(--accent);
+        
+        .footer__links a:hover {
+            opacity: 1;
         }
-        @media (max-width: 900px) {
-            .container { padding: 21px 5vw; }
-            .about { padding: 26px 11px 18px 11px; }
-            .apps-grid { gap: 26px; }
-            .banner-img-wrapper { height: 190px; }
-        }
-        @media (max-width: 600px) {
-            .apps-grid { grid-template-columns: 1fr; }
-            .about { padding: 13px 5px 11px 5px; }
-            h2 { font-size: 1.25em; }
-            .header-content h1 { font-size: 1.3em; }
-            .banner-img-wrapper { height: 110px; }
+
+        /* ===== Responsividade ===== */
+        @media (max-width: 768px) {
+            .header { height: 350px; } /* Altura ajustada para telas menores */
+            .header__title { font-size: 2.2em; }
+            .section__title { font-size: 1.8em; }
+            .projects__grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="banner-img-wrapper">
-            <!-- Unsplash image, free to use: professional workspace with computer -->
-            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1400&q=80" alt="Banner profissional computador escritório">
-        </div>
-        <div class="header-content">
-            <h1>Projetos Python para Windows</h1>
-            <p>Soluções modernas de automação e controle de áudio para produtividade máxima</p>
-            <div class="header-social">
-                <a href="https://github.com/jdfxop" target="_blank">GitHub</a>
+    <header class="header">
+        <div class="header__background"></div>
+        <div class="header__content">
+            <h1 class="header__title">IA e Automações com Python</h1>
+            <p class="header__subtitle">Desenvolvendo soluções inteligentes para otimizar processos e impulsionar a produtividade no Windows.</p>
+            <div class="header__links">
+                <a href="https://github.com/regaliainterno" target="_blank">GitHub</a>
                 <a href="https://www.linkedin.com/in/lucas-nascimento28/" target="_blank">LinkedIn</a>
             </div>
         </div>
     </header>
 
-    <main>
-        <div class="container">
-            <section class="about">
-                <h2>Sobre Mim</h2>
-                <p>
-                    Sou <strong>jdfxop</strong>, desenvolvedor apaixonado por backend e automações. Trabalho com Python, Java e JavaScript criando soluções profissionais para Windows, com foco em controle de áudio, produtividade e robustez.<br>
-                    Meus projetos unem simplicidade de uso, tecnologia de ponta e design funcional.
-                </p>
-                <ul class="skills-list">
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>JavaScript</li>
-                    <li>Automação</li>
-                    <li>Controle de Áudio (Windows)</li>
-                    <li>Ferramentas Desktop</li>
-                    <li>Backend</li>
-                    <li>Resolução de Problemas</li>
-                    <li>Git & GitHub</li>
-                </ul>
-            </section>
+    <main class="container">
+        
+        <section id="about" class="section">
+            <h2 class="section__title">Sobre Mim</h2>
+            <p class="about__content">
+                Sou <strong>regaliainterno</strong>, desenvolvedor apaixonado por backend e automações. Crio soluções profissionais para Windows com foco em controle de áudio, produtividade e robustez, utilizando tecnologias como Python, Java e JavaScript. Meus projetos unem simplicidade de uso, tecnologia de ponta e design funcional.
+            </p>
+            <ul class="about__skills-list">
+                <li class="about__skill-item">Python</li>
+                <li class="about__skill-item">Inteligência Artificial</li>
+                <li class="about__skill-item">Automação</li>
+                <li class="about__skill-item">Controle de Áudio (Windows)</li>
+                <li class="about__skill-item">Ferramentas Desktop</li>
+                <li class="about__skill-item">Backend</li>
+                <li class="about__skill-item">Git & GitHub</li>
+            </ul>
+        </section>
 
-            <section>
-                <h2>Projetos em Destaque</h2>
-                <div class="apps-grid">
+        <section id="projects" class="section">
+            <h2 class="section__title">Projetos em Destaque</h2>
+            <div class="projects__grid">
+                
+                <article class="project-card">
+                    <span class="project-card__tag">windows_saida</span>
+                    <h3 class="project-card__title">Controle Profissional de Saída de Áudio</h3>
+                    <p class="project-card__description">
+                        Manipule qualquer dispositivo de áudio de saída do Windows. Ajuste o volume, mute/desmute e utilize o inovador <b>boost</b>: aumente o volume até <strong>+50db</strong> além do limite do sistema.
+                    </p>
+                    <ul class="project-card__features">
+                        <li>Controle intuitivo do volume</li>
+                        <li>Função Boost (+50db)</li>
+                        <li>Mute/desmute instantâneo</li>
+                    </ul>
+                    <p class="project-card__technologies"><strong>Tecnologias:</strong> Python, pycaw, comtypes, tkinter</p>
+                    <a href="https://github.com/regaliainterno/windows_saida" target="_blank" class="project-card__button">Ver no GitHub</a>
+                </article>
 
-                    <div class="app-card">
-                        <span class="tag">windows_saida</span>
-                        <div class="app-video">
-                            <!-- Vídeo de demonstração genérico, pode trocar depois -->
-                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/F4tHL8reNCs" title="Demonstração windows_saida" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                        <h3>Controle Profissional dos Dispositivos de Saída</h3>
-                        <p>
-                            Manipule qualquer dispositivo de <strong>áudio de saída</strong> do Windows. Ajuste o volume via slidebar, mute/desmute com um clique e utilize o inovador <b>boost</b>: aumente o volume até <strong>50db acima dos 100%</strong> permitidos pelo sistema. Ideal para gamers (FPS), videoconferências e quem busca áudio máximo.
-                        </p>
-                        <ul style="padding-left:18px; color:#6e7f95; font-size:1em; margin-bottom:14px; margin-top:10px;">
-                            <li>Controle intuitivo do volume de saída</li>
-                            <li>Função Boost (+50db além do máximo padrão)</li>
-                            <li>Mute/desmute instantâneo</li>
-                        </ul>
-                        <p class="technologies"><strong>Tecnologias:</strong> Python, pycaw, pyaudio, comtypes, tkinter</p>
-                        <a href="https://github.com/regaliainterno/windows_saida" target="_blank">Ver no GitHub</a>
-                    </div>
+                <article class="project-card">
+                    <span class="project-card__tag">windows_entrada</span>
+                    <h3 class="project-card__title">Controle Absoluto do Microfone</h3>
+                    <p class="project-card__description">
+                        Pare de sofrer com o Windows baixando o volume do seu microfone. Este app mantém seu dispositivo de entrada travado no volume desejado, garantindo consistência em reuniões e gravações.
+                    </p>
+                    <ul class="project-card__features">
+                        <li>Trava automática do volume</li>
+                        <li>Controle fácil do ganho de entrada</li>
+                        <li>Solução para áudio profissional</li>
+                    </ul>
+                    <p class="project-card__technologies"><strong>Tecnologias:</strong> Python, pycaw, comtypes, tkinter</p>
+                    <a href="https://github.com/regaliainterno/windows_entrada" target="_blank" class="project-card__button">Ver no GitHub</a>
+                </article>
 
-                    <div class="app-card">
-                        <span class="tag">windows_entrada</span>
-                        <div class="app-video">
-                            <!-- Outro vídeo genérico de demonstração -->
-                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/2Ji-clqUYnA" title="Demonstração windows_entrada" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                        <h3>Controle Absoluto do Microfone</h3>
-                        <p>
-                            Pare de sofrer com o Windows baixando sozinho o volume do microfone. Tenha controle total do seu dispositivo de entrada e mantenha o microfone sempre em 100%, evitando cortes e surpresas em reuniões, lives ou gravações.
-                        </p>
-                        <ul style="padding-left:18px; color:#6e7f95; font-size:1em; margin-bottom:14px; margin-top:10px;">
-                            <li>Manutenção automática do microfone em 100%</li>
-                            <li>Controle fácil do volume de entrada</li>
-                            <li>Solução confiável para voz profissional</li>
-                        </ul>
-                        <p class="technologies"><strong>Tecnologias:</strong> Python, pycaw, pyaudio, comtypes, tkinter</p>
-                        <a href="https://github.com/regaliainterno/windows_entrada" target="_blank">Ver no GitHub</a>
-                    </div>
+                <article class="project-card">
+                    <span class="project-card__tag">audio_session_mixer</span>
+                    <h3 class="project-card__title">Mixer de Sessões de Áudio</h3>
+                    <p class="project-card__description">
+                       Controle o volume de cada aplicativo individualmente. Aumente o som do seu jogo enquanto diminui o da música de fundo, ou silencie apps específicos com um clique.
+                    </p>
+                     <ul class="project-card__features">
+                        <li>Controle de volume por aplicativo</li>
+                        <li>Interface para todas as sessões</li>
+                        <li>Mute/desmute individual</li>
+                    </ul>
+                    <p class="project-card__technologies"><strong>Tecnologias:</strong> Python, pycaw, psutil, tkinter</p>
+                    <a href="https://github.com/regaliainterno/audio_session_mixer" target="_blank" class="project-card__button">Ver no GitHub</a>
+                </article>
+                
+            </div>
+        </section>
 
-                </div>
-            </section>
-        </div>
     </main>
 
-    <footer>
-        <div>
-            <p>&copy; 2025 jdfxop. Todos os direitos reservados.</p>
-            <div class="social-links">
-                <a href="https://github.com/jdfxop" target="_blank" title="GitHub">GitHub</a> |
-                <a href="https://www.linkedin.com/in/lucas-nascimento28/" target="_blank" title="LinkedIn">LinkedIn</a> |
-                <a href="https://instagram.com/jdfxop" target="_blank" title="Instagram">@jdfxop</a> |
-                <a href="mailto:seu.email@example.com" title="Email">Email</a>
-            </div>
+    <footer class="footer">
+        <p class="footer__copyright">© 2025 regaliainterno. Todos os direitos reservados.</p>
+        <div class="footer__links">
+            <a href="https://github.com/regaliainterno" target="_blank" title="GitHub">GitHub</a>
+            <a href="https://www.linkedin.com/in/lucas-nascimento28/" target="_blank" title="LinkedIn">LinkedIn</a>
+            <a href="https://instagram.com/jdfxop" target="_blank" title="Instagram">Instagram</a>
+            <a href="mailto:contatolucasscremin@gmail.com" title="Email">Email</a>
         </div>
     </footer>
+
 </body>
 </html>
