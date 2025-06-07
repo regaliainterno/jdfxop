@@ -90,4 +90,296 @@
             border-radius: 5px;
             text-decoration: none;
             margin: 0 8px;
-            padding: 8px
+            padding: 8px 22px;
+            box-shadow: 0 1px 8px #1112;
+            transition: background 0.22s, color 0.22s;
+        }
+        .header-social a:hover {
+            background: var(--primary);
+            color: #fff;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 16px;
+        }
+        h2 {
+            text-align: center;
+            font-size: 2.1em;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 38px;
+            letter-spacing: 1px;
+            position: relative;
+            display: inline-block;
+            background: none;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        h2::after {
+            content: '';
+            display: block;
+            width: 64px;
+            height: 3px;
+            border-radius: 2px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            margin: 14px auto 0;
+        }
+        .about {
+            background: var(--white);
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+            padding: 44px 36px 36px 36px;
+            margin-bottom: 56px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        .about p {
+            color: var(--gray);
+            font-size: 1.13em;
+            margin: 0 0 18px 0;
+            line-height: 1.7;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 22px 0 0 0;
+            padding: 0;
+            list-style: none;
+            justify-content: center;
+        }
+        .skills-list li {
+            background: linear-gradient(90deg, var(--primary) 60%, var(--accent) 100%);
+            color: var(--white);
+            padding: 8px 17px;
+            border-radius: 6px;
+            font-size: 1em;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            box-shadow: 0 2px 5px rgba(44,62,80,0.04);
+        }
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            align-items: stretch; /* Garante que os cards na mesma linha tenham a mesma altura */
+        }
+        .app-card {
+            background: var(--white);
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+            padding: 30px 32px;
+            border: var(--card-border);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.19s cubic-bezier(.23,1.01,.32,1), box-shadow 0.19s;
+            position: relative;
+        }
+        .app-card:hover {
+            transform: translateY(-10px) scale(1.015);
+            box-shadow: 0 10px 28px rgba(44,62,80,0.19);
+            border-color: var(--primary);
+        }
+        .app-card h3 {
+            color: var(--primary);
+            font-size: 1.18em;
+            margin: 10px 0 11px 0;
+            font-weight: 700;
+            letter-spacing: 0.4px;
+        }
+        .app-card p {
+            color: #484848;
+            font-size: 1.08em;
+            margin: 0 0 13px 0;
+            line-height: 1.65;
+            flex-grow: 1; /* Faz o parágrafo ocupar o espaço disponível */
+        }
+        .app-card .tag {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--white);
+            font-size: 0.95em;
+            font-weight: 500;
+            padding: 4px 13px;
+            border-radius: 12px;
+            letter-spacing: 0.5px;
+            margin-right: 6px;
+            align-self: flex-start;
+        }
+        .app-features {
+            padding-left: 18px;
+            color: #6e7f95;
+            font-size: 1em;
+            margin-bottom: 14px;
+            margin-top: 10px;
+            flex-grow: 1;
+        }
+        .app-card .technologies {
+            font-size: 0.97em;
+            color: #7a8ca7;
+            margin-bottom: 22px;
+            margin-top: 10px;
+        }
+        .app-card a.github-button {
+            margin-top: auto; /* Empurra o botão para o final do card */
+            align-self: flex-start;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            color: var(--white);
+            padding: 10px 22px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.06em;
+            letter-spacing: 0.3px;
+            transition: background 0.3s;
+            box-shadow: 0 1px 4px rgba(44,62,80,0.08);
+            border: none;
+        }
+        .app-card a.github-button:hover {
+            background: #1749ad;
+        }
+        footer {
+            background: var(--primary);
+            color: var(--white);
+            text-align: center;
+            padding: 28px 16px 20px;
+            font-size: 1em;
+            margin-top: 56px;
+            border-top: 2px solid var(--accent);
+        }
+        .social-links {
+            margin: 18px 0;
+        }
+        .social-links a {
+            color: var(--white);
+            margin: 0 13px;
+            font-size: 1.16em;
+            text-decoration: none;
+            transition: color 0.19s;
+        }
+        .social-links a:hover {
+            color: var(--accent);
+        }
+        @media (max-width: 900px) {
+            .container { padding: 21px 5vw; }
+            .about { padding: 26px 11px 18px 11px; }
+            .apps-grid { gap: 26px; }
+            .banner-img-wrapper { height: 220px; }
+        }
+        @media (max-width: 600px) {
+            .apps-grid { grid-template-columns: 1fr; }
+            .about { padding: 13px 5px 11px 5px; }
+            h2 { font-size: 1.8em; }
+            .header-content h1 { font-size: 2em; }
+            .header-content p { font-size: 1em; padding: 8px 16px; }
+            .banner-img-wrapper { height: 180px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="banner-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1400&q=80" alt="Banner profissional computador escritório">
+        </div>
+        <div class="header-content">
+            <h1>Projetos Python para Windows</h1>
+            <p>Soluções modernas de automação e controle de áudio para produtividade máxima</p>
+            <div class="header-social">
+                <a href="https://github.com/regaliainterno" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/lucas-nascimento28/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="about">
+                <h2>Sobre Mim</h2>
+                <p>
+                    Sou <strong>regaliainterno</strong>, desenvolvedor apaixonado por backend e automações. Trabalho com Python, Java e JavaScript criando soluções profissionais para Windows, com foco em controle de áudio, produtividade e robustez.<br>
+                    Meus projetos unem simplicidade de uso, tecnologia de ponta e design funcional.
+                </p>
+                <ul class="skills-list">
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>JavaScript</li>
+                    <li>Automação</li>
+                    <li>Controle de Áudio (Windows)</li>
+                    <li>Ferramentas Desktop</li>
+                    <li>Backend</li>
+                    <li>Resolução de Problemas</li>
+                    <li>Git & GitHub</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Projetos em Destaque</h2>
+                <div class="apps-grid">
+
+                    <div class="app-card">
+                        <span class="tag">windows_saida</span>
+                        <h3>Controle Profissional de Saída de Áudio</h3>
+                        <p>
+                            Manipule qualquer dispositivo de <strong>áudio de saída</strong> do Windows. Ajuste o volume, mute/desmute e utilize o inovador <b>boost</b>: aumente o volume até <strong>+50db</strong> além do limite do sistema. Ideal para gamers, videoconferências e quem busca máxima potência sonora.
+                        </p>
+                        <ul class="app-features">
+                            <li>Controle intuitivo do volume de saída</li>
+                            <li>Função Boost (+50db além do máximo padrão)</li>
+                            <li>Mute/desmute instantâneo</li>
+                        </ul>
+                        <p class="technologies"><strong>Tecnologias:</strong> Python, pycaw, comtypes, tkinter</p>
+                        <a href="https://github.com/regaliainterno/windows_saida" target="_blank" class="github-button">Ver no GitHub</a>
+                    </div>
+
+                    <div class="app-card">
+                        <span class="tag">windows_entrada</span>
+                        <h3>Controle Absoluto do Microfone</h3>
+                        <p>
+                            Pare de sofrer com o Windows baixando sozinho o volume do seu microfone. Este app mantém seu dispositivo de entrada travado no volume desejado, garantindo consistência em reuniões, lives ou gravações.
+                        </p>
+                        <ul class="app-features">
+                            <li>Trava automática do volume do microfone</li>
+                            <li>Controle fácil do ganho de entrada</li>
+                            <li>Solução confiável para áudio profissional</li>
+                        </ul>
+                        <p class="technologies"><strong>Tecnologias:</strong> Python, pycaw, comtypes, tkinter</p>
+                        <a href="https://github.com/regaliainterno/windows_entrada" target="_blank" class="github-button">Ver no GitHub</a>
+                    </div>
+
+                    <div class="app-card">
+                        <span class="tag">audio_session_mixer</span>
+                        <h3>Mixer de Sessões de Áudio</h3>
+                        <p>
+                           Controle o volume de cada aplicativo individualmente no Windows. Aumente o som do seu jogo enquanto diminui o da música de fundo, ou silencie notificações de um app específico com apenas um clique. Gerenciamento de áudio granular e simplificado.
+                        </p>
+                        <ul class="app-features">
+                            <li>Controle de volume por aplicativo</li>
+                            <li>Interface gráfica para todas as sessões ativas</li>
+                            <li>Mute/desmute individual por processo</li>
+                        </ul>
+                        <p class="technologies"><strong>Tecnologias:</strong> Python, pycaw, psutil, tkinter</p>
+                        <a href="https://github.com/regaliainterno/audio_session_mixer" target="_blank" class="github-button">Ver no GitHub</a>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <p>© 2025 regaliainterno. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="https://github.com/regaliainterno" target="_blank" title="GitHub">GitHub</a> |
+                <a href="https://www.linkedin.com/in/lucas-nascimento28/" target="_blank" title="LinkedIn">LinkedIn</a> |
+                <a href="https://instagram.com/jdfxop" target="_blank" title="Instagram">Instagram</a> |
+                <a href="mailto:contatolucasscremin@gmail.com" title="Email">Email</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
