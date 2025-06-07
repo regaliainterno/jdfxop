@@ -3,328 +3,268 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de jdfxop, estudante de backend (Python, Java, JavaScript) focado em criar ferramentas práticas para o dia a dia e otimização de sistemas, incluindo controle de áudio para Windows.">
-    <title>Portfólio de Projetos | jdfxop</title>
+    <meta name="description" content="Portfólio de jdfxop - Projetos em Python para controle de áudio no Windows.">
+    <title>Projetos Python | jdfxop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;500;400&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --primary: #3498db;
+            --accent: #1abc9c;
+            --bg: #f6fafc;
+            --dark: #23272f;
+            --white: #fff;
+            --gray: #5a6270;
+        }
+        * { box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            background: linear-gradient(135deg, #f4f7f6 60%, #eaf6fb 100%);
-            color: #23272f;
-            line-height: 1.7;
+            font-family: 'Montserrat', Arial, sans-serif;
+            background: linear-gradient(120deg, var(--bg) 70%, #eaf6fb 100%);
+            color: var(--dark);
         }
-
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 24px;
-        }
-
         header {
-            background: linear-gradient(90deg, #2c3e50 60%, #3498db 100%);
-            color: #ecf0f1;
-            padding: 48px 0 32px;
+            background: linear-gradient(90deg, var(--primary) 65%, var(--accent) 100%);
+            color: var(--white);
             text-align: center;
-            box-shadow: 0 2px 8px rgba(44, 62, 80, 0.07);
+            padding: 60px 16px 34px 16px;
+            box-shadow: 0 2px 12px rgba(44,62,80,0.07);
         }
-
         header h1 {
-            margin: 0;
-            font-size: 2.7em;
-            letter-spacing: 0.5px;
             font-weight: 700;
+            font-size: 2.7em;
+            margin: 0;
+            letter-spacing: 2px;
         }
-
         header p {
-            font-size: 1.15em;
-            margin-top: 12px;
-            color: #d5e4ee;
+            font-weight: 400;
+            font-size: 1.18em;
+            margin: 16px 0 0 0;
+            color: #e3f1fa;
         }
-
-        section {
-            padding: 48px 0 32px;
-            text-align: center;
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 32px 16px;
         }
-
-        section:nth-child(even) {
-            background-color: #f7fafd;
-        }
-
         h2 {
             font-size: 2.1em;
-            color: #263248;
-            margin-bottom: 32px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 36px;
+            letter-spacing: 1px;
             position: relative;
             display: inline-block;
         }
-
         h2::after {
             content: '';
-            position: absolute;
-            width: 64px;
+            display: block;
+            width: 68px;
             height: 3px;
-            background-color: #3498db;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
             border-radius: 2px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            margin: 12px auto 0;
         }
-
-        /* Sobre Mim */
-        .about-content {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: flex-start;
-            justify-content: center;
-            gap: 32px;
-            text-align: left;
+        .about {
+            background: var(--white);
+            border-radius: 14px;
+            box-shadow: 0 4px 18px rgba(44,62,80,0.09);
+            padding: 38px 32px 32px 32px;
+            margin-bottom: 40px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
         }
-
-        .about-text {
-            max-width: 750px;
-            margin: 0 auto;
+        .about p {
+            color: var(--gray);
+            font-size: 1.12em;
+            margin: 0 0 18px 0;
+            line-height: 1.7;
         }
-
-        .about-text p {
-            font-size: 1.07em;
-            color: #4a4a4a;
-            margin-bottom: 16px;
-        }
-
         .skills-list {
-            list-style: none;
-            padding: 0;
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
-            margin: 20px 0 0 0;
-            justify-content: flex-start;
+            margin: 18px 0 0 0;
+            padding: 0;
+            list-style: none;
         }
-
         .skills-list li {
-            background: linear-gradient(90deg, #3498db 60%, #1abc9c 100%);
-            color: #fff;
-            padding: 8px 15px;
-            border-radius: 5px;
-            font-size: 0.98em;
+            background: linear-gradient(90deg, var(--primary) 60%, var(--accent) 100%);
+            color: var(--white);
+            padding: 7px 17px;
+            border-radius: 6px;
+            font-size: 0.97em;
             font-weight: 600;
-            box-shadow: 0 2px 6px rgba(44, 62, 80, 0.05);
+            letter-spacing: 0.5px;
+            box-shadow: 0 2px 5px rgba(44,62,80,0.04);
         }
-
-        /* Projetos */
-        .projects-grid {
+        .apps-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
             gap: 32px;
-            margin-top: 32px;
         }
-
-        .project-card {
-            background: #fff;
+        .app-card {
+            background: var(--white);
             border-radius: 12px;
-            box-shadow: 0 4px 14px rgba(44, 62, 80, 0.11);
-            padding: 28px 22px 22px;
+            box-shadow: 0 4px 18px rgba(44,62,80,0.09);
+            padding: 32px 25px 25px;
             text-align: left;
-            transition: transform 0.23s cubic-bezier(.23,1.01,.32,1), box-shadow 0.23s;
             border: 1.5px solid #e5ecf2;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 340px;
+            transition: transform 0.22s cubic-bezier(.23,1.01,.32,1), box-shadow 0.22s;
         }
-
-        .project-card:hover {
-            transform: translateY(-7px) scale(1.02);
-            box-shadow: 0 8px 20px rgba(44,62,80,0.17);
-            border-color: #3498db;
+        .app-card:hover {
+            transform: translateY(-8px) scale(1.025);
+            box-shadow: 0 10px 28px rgba(44,62,80,0.17);
+            border-color: var(--primary);
         }
-
-        .project-card h3 {
-            color: #3498db;
-            margin-top: 0;
-            margin-bottom: 10px;
-            font-size: 1.35em;
+        .app-card h3 {
+            color: var(--primary);
+            font-size: 1.3em;
+            margin: 0 0 10px 0;
+            font-weight: 700;
         }
-
-        .project-card p {
-            color: #464646;
-            font-size: 1.04em;
-            margin-bottom: 14px;
+        .app-card p {
+            color: #484848;
+            font-size: 1.05em;
+            margin: 0 0 14px 0;
         }
-
-        .project-card .technologies {
-            font-size: 0.93em;
-            color: #777;
-            margin-bottom: 18px;
+        .app-card .technologies {
+            font-size: 0.99em;
+            color: #7a8ca7;
+            margin-bottom: 20px;
+            margin-top: 8px;
         }
-
-        .project-card a {
-            display: inline-block;
-            background: linear-gradient(90deg, #3498db 60%, #1abc9c 100%);
-            color: #fff;
+        .app-card a {
+            margin-top: auto;
+            align-self: flex-start;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            color: var(--white);
             padding: 9px 20px;
             border-radius: 5px;
             text-decoration: none;
             font-weight: bold;
-            letter-spacing: 0.3px;
             font-size: 1em;
+            letter-spacing: 0.4px;
             transition: background 0.3s;
+            box-shadow: 0 1px 4px rgba(44,62,80,0.08);
         }
-
-        .project-card a:hover {
+        .app-card a:hover {
             background: #217dbb;
         }
-
         footer {
-            background: #2c3e50;
-            color: #ecf0f1;
+            background: var(--primary);
+            color: var(--white);
             text-align: center;
-            padding: 28px 0 16px;
-            font-size: 0.97em;
-            margin-top: 40px;
-            border-top: 2px solid #3498db;
+            padding: 26px 0 14px;
+            font-size: 1em;
+            margin-top: 56px;
+            border-top: 2px solid var(--accent);
         }
-
-        footer .social-links {
+        .social-links {
             margin: 18px 0 0 0;
         }
-
-        footer .social-links a {
-            color: #ecf0f1;
-            margin: 0 10px;
-            font-size: 1.25em;
+        .social-links a {
+            color: var(--white);
+            margin: 0 12px;
+            font-size: 1.22em;
             text-decoration: none;
-            transition: color 0.24s;
+            transition: color 0.21s;
         }
-
-        footer .social-links a:hover {
-            color: #1abc9c;
+        .social-links a:hover {
+            color: var(--accent);
         }
-
-        @media (max-width: 900px) {
-            .container {
-                padding: 14px;
-            }
-            .about-text {
-                max-width: 100%;
-            }
+        @media (max-width: 800px) {
+            header h1 { font-size: 2em; }
+            .about { padding: 26px 11px 18px 11px; }
+            .container { padding: 21px 5vw; }
         }
-        @media (max-width: 700px) {
-            .projects-grid {
-                grid-template-columns: 1fr;
-            }
-            section {
-                padding: 32px 0 20px;
-            }
-            h2 {
-                font-size: 1.5em;
-            }
+        @media (max-width: 600px) {
+            .apps-grid { grid-template-columns: 1fr; }
+            .about { padding: 13px 5px 11px 5px; }
+            h2 { font-size: 1.25em; }
         }
     </style>
 </head>
 <body>
 
     <header>
-        <div class="container">
-            <h1>Olá! Sou jdfxop</h1>
-            <p>Estudante de Python, Java, JavaScript | Backend em formação | Criador de soluções para Windows</p>
-        </div>
+        <h1>Projetos em Python</h1>
+        <p>Controle e automação de áudio no Windows por <strong>jdfxop</strong></p>
     </header>
 
-    <section id="about">
+    <main>
         <div class="container">
-            <h2>Sobre Mim</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        Bem-vindo(a) ao meu portfólio! Sou <strong>jdfxop</strong>, estudante focado em backend, atualmente aprendendo Python, Java e JavaScript. Tenho paixão por criar <strong>aplicativos que ajudam a resolver problemas do Windows</strong> e tornar o dia a dia mais prático.
-                    </p>
-                    <p>
-                        Acredito que a tecnologia pode facilitar a vida, por isso busco desenvolver ferramentas úteis, principalmente para quem enfrenta desafios com sistemas operacionais.
-                    </p>
-                    <h3 style="margin-top: 30px;">Minhas Habilidades:</h3>
-                    <ul class="skills-list">
-                        <li>Python</li>
-                        <li>Java</li>
-                        <li>JavaScript</li>
-                        <li>Backend em formação</li>
-                        <li>Automação de Tarefas</li>
-                        <li>Manipulação de Áudio (Windows)</li>
-                        <li>Controle de Dispositivos de Entrada</li>
-                        <li>Desenvolvimento de Ferramentas</li>
-                        <li>Resolução de Problemas</li>
-                        <li>Git & GitHub</li>
-                    </ul>
+            <section class="about">
+                <h2>Sobre</h2>
+                <p>
+                    Olá! Sou <strong>jdfxop</strong>, estudante de backend (Python, Java, JavaScript) com foco em soluções práticas para o Windows. Crio aplicativos que facilitam o controle de áudio e otimizam a experiência do usuário.
+                </p>
+                <ul class="skills-list">
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>JavaScript</li>
+                    <li>Controle de Áudio (Windows)</li>
+                    <li>Automação</li>
+                    <li>Desenvolvimento de Ferramentas</li>
+                    <li>Backend em formação</li>
+                    <li>Resolução de Problemas</li>
+                    <li>Git & GitHub</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Meus Apps</h2>
+                <div class="apps-grid">
+
+                    <div class="app-card">
+                        <h3>Windows_saida — Controle de Dispositivos de Saída</h3>
+                        <p>
+                            Aplicativo para Windows que permite manipular dispositivos de <b>saída de áudio</b> do sistema. Controle o volume do seu dispositivo de saída utilizando uma barra deslizante (slidebar), mute/desmute com apenas um clique e utilize o <strong>boost</strong> exclusivo: aumente o volume até <b>50db acima dos 100%</b> permitidos pelo Windows, ideal para quem joga FPS ou precisa de áudio mais potente.
+                        </p>
+                        <p>
+                            <strong>Principais recursos:</strong> <br>
+                            • Controle preciso do volume de saída <br>
+                            • Mute/desmute instantâneo <br>
+                            • Boost de volume para além do limite do Windows
+                        </p>
+                        <p class="technologies"><strong>Tecnologias:</strong> Python, pycaw, pyaudio, comtypes, tkinter</p>
+                        <a href="https://github.com/regaliainterno/windows_saida" target="_blank">Ver no GitHub</a>
+                    </div>
+
+                    <div class="app-card">
+                        <h3>Windows_entrada — Controle de Microfone</h3>
+                        <p>
+                            O Windows reduz automaticamente o volume do microfone? Este app resolve o problema! Controle o volume do seu dispositivo de entrada (microfone) e ative a opção de manter o microfone sempre em 100%, evitando surpresas durante reuniões, jogos ou gravações.
+                        </p>
+                        <p>
+                            <strong>Principais recursos:</strong> <br>
+                            • Manutenção automática do volume do microfone em 100% <br>
+                            • Controle fácil do volume de entrada <br>
+                            • Simplicidade e eficiência para quem depende do microfone no dia a dia
+                        </p>
+                        <p class="technologies"><strong>Tecnologias:</strong> Python, pycaw, pyaudio, comtypes, tkinter</p>
+                        <a href="https://github.com/regaliainterno/windows_entrada" target="_blank">Ver no GitHub</a>
+                    </div>
+
                 </div>
-            </div>
+            </section>
         </div>
-    </section>
-
-    <section id="projects">
-        <div class="container">
-            <h2>Meus Aplicativos em Python</h2>
-            <div class="projects-grid">
-                
-                <div class="project-card">
-                    <h3>Controlador de Volume de Aplicativos de Entrada (Windows)</h3>
-                    <p>
-                        Aplicativo desenvolvido para <strong>controlar o volume dos aplicativos de entrada do Windows</strong>, permitindo um gerenciamento mais preciso e personalizado dos dispositivos de áudio de entrada, como microfones e outros dispositivos de captura de som.
-                    </p>
-                    <p>
-                        <strong>Minha visão:</strong> Este projeto surgiu da necessidade de ter um controle mais detalhado sobre o volume dos aplicativos de entrada, algo que o Windows não oferece nativamente. Ideal para quem realiza chamadas, gravações ou transmissões e precisa ajustar o volume de entrada de diferentes aplicativos sem complicação.
-                    </p>
-                    <p class="technologies"><strong>Tecnologias:</strong> Python, Bibliotecas de Controle de Áudio do Windows (<code>pycaw</code>, <code>pyaudio</code>, <code>comtypes</code>), <code>tkinter</code> (para GUI)</p>
-                    <a href="https://github.com/regaliainterno/windows_entrada" target="_blank">Ver no GitHub</a>
-                </div>
-
-                <div class="project-card">
-                    <h3>Controlador de Volume de Aplicativos de Saída (Windows)</h3>
-                    <p>
-                        Aplicativo criado para <strong>controlar o volume dos aplicativos de saída do Windows</strong>, permitindo um ajuste individualizado de cada aplicativo que emite som pelo sistema, como players de música, jogos ou navegadores.
-                    </p>
-                    <p>
-                        <strong>Minha visão:</strong> Desenvolvi este projeto para facilitar o gerenciamento do volume de diferentes programas, algo que o Windows não faz de forma prática nativamente. Ideal para quem precisa equilibrar volumes entre apps, seja para produtividade, lazer ou comunicação.
-                    </p>
-                    <p class="technologies"><strong>Tecnologias:</strong> Python, Bibliotecas de Controle de Áudio do Windows (<code>pycaw</code>, <code>pyaudio</code>, <code>comtypes</code>), <code>tkinter</code> (para GUI)</p>
-                    <a href="https://github.com/regaliainterno/windows_saida" target="_blank">Ver no GitHub</a>
-                </div>
-
-                <div class="project-card">
-                    <h3>Controlador de Volume Mestre (com Boost)</h3>
-                    <p>
-                        Um aplicativo em Python para Windows que oferece controle total sobre o <strong>volume de saída do sistema</strong>. Além das funções básicas de ajuste, ele possui um recurso exclusivo para <strong>aumentar o volume acima do limite padrão do Windows</strong>.
-                    </p>
-                    <p>
-                        <strong>Minha visão:</strong> Desenvolvi este app pensando em otimizar a experiência em cenários onde cada decibel faz a diferença, como em <strong>jogos FPS</strong>, onde a audição de passos e sons ambientes pode ser crucial para a vantagem competitiva.
-                    </p>
-                    <p class="technologies"><strong>Tecnologias:</strong> Python, Bibliotecas de Controle de Áudio do Windows (<code>pycaw</code>, <code>pyaudio</code> ou <code>comtypes</code>), <code>tkinter</code> (para GUI)</p>
-                    <a href="https://github.com/jdfxop/app-volume-windows" target="_blank">Ver no GitHub</a>
-                </div>
-
-                <div class="project-card">
-                    <h3>Mantenedor de Volume de Microfone</h3>
-                    <p>
-                        Este aplicativo Python resolve um problema comum no Windows: a <strong>redução automática do volume do microfone</strong>. Ele garante que o <strong>volume do seu dispositivo de entrada permaneça em 100%</strong>, mesmo quando o sistema tenta ajustá-lo.
-                    </p>
-                    <p>
-                        <strong>Minha visão:</strong> Criei esta ferramenta para garantir uma comunicação clara e ininterrupta em chamadas, gravações ou transmissões. É ideal para quem precisa de estabilidade no áudio do microfone sem interrupções indesejadas.
-                    </p>
-                    <p class="technologies"><strong>Tecnologias:</strong> Python, Bibliotecas de Controle de Áudio do Windows (<code>pycaw</code>, <code>pyaudio</code> ou <code>comtypes</code>), <code>tkinter</code> (para GUI)</p>
-                    <a href="https://github.com/jdfxop/app-microfone-windows" target="_blank">Ver no GitHub</a>
-                </div>
-
-            </div>
-        </div>
-    </section>
+    </main>
 
     <footer>
-        <div class="container">
+        <div>
             <p>&copy; 2025 jdfxop. Todos os direitos reservados.</p>
             <div class="social-links">
-                <a href="https://github.com/jdfxop" target="_blank">GitHub</a> |
-                <a href="https://linkedin.com/in/seu-perfil" target="_blank">LinkedIn</a> |
-                <a href="https://instagram.com/jdfxop" target="_blank">Instagram</a> |
-                <a href="mailto:seu.email@example.com">Email</a>
+                <a href="https://github.com/jdfxop" target="_blank" title="GitHub">GitHub</a> |
+                <a href="https://linkedin.com/in/seu-perfil" target="_blank" title="LinkedIn">LinkedIn</a> |
+                <a href="https://instagram.com/jdfxop" target="_blank" title="Instagram">@jdfxop</a> |
+                <a href="mailto:seu.email@example.com" title="Email">Email</a>
             </div>
         </div>
     </footer>
-
 </body>
 </html>
