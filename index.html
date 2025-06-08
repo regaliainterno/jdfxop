@@ -16,6 +16,9 @@
             --white: #fff;
             --border-color: #e3e3e3;
             --shadow: 0 2px 8px rgba(0,0,0,0.05);
+            --button-bg: #181a1b;
+            --button-text: #fff;
+            --button-hover: #222;
         }
 
         * {
@@ -170,8 +173,8 @@
         .project-card__button {
             margin-top: auto;
             align-self: flex-start;
-            background: var(--primary);
-            color: var(--white);
+            background: var(--button-bg);
+            color: var(--button-text);
             padding: 9px 22px;
             border-radius: 4px;
             text-decoration: none;
@@ -179,9 +182,10 @@
             font-size: 0.98em;
             border: none;
             transition: background 0.2s;
+            display: inline-block;
         }
         .project-card__button:hover {
-            background: #222;
+            background: var(--button-hover);
         }
         .footer {
             background: var(--white);
@@ -286,7 +290,7 @@
                         <li>Mute/desmute individual</li>
                     </ul>
                     <p class="project-card__technologies"><strong>Tecnologias:</strong> Python, pycaw, psutil, tkinter</p>
-                    <a href="https://github.com/regaliainterno/windows_mixer" target="_blank" class="project-card__button">@regaliainterno/windows_mixer</a>
+                    <a href="https://github.com/regaliainterno/windows_mixer" target="_blank" class="project-card__button">Ver no GitHub</a>
                 </article>
             </div>
         </section>
