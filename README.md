@@ -1,5 +1,3 @@
-# Olá! Eu sou Lucas do Nascimento 👋
-
 <p align="left">
   <a href="https://github.com/regaliainterno" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
@@ -14,44 +12,51 @@
 
 ---
 
-## 🚀 Sobre Mim
+<h2>🚀 Sobre Mim</h2>
 
-Olá! Sou Lucas do Nascimento, um **Desenvolvedor de Software** de 28 anos, apaixonado por tecnologia e focado em construir soluções práticas e eficientes. Tenho sólida formação em **Python**, **Java** e **JavaScript**, com ênfase no desenvolvimento de aplicações robustas.
+<p>Olá! Sou Lucas do Nascimento, um <strong>Desenvolvedor de Software</strong> de 28 anos, apaixonado por tecnologia e focado em construir soluções práticas e eficientes. Minha experiência vem da <strong>prática diária e da dedicação em desvendar e resolver os desafios de desenvolvimento</strong>, especialmente em <strong>Python</strong> e <strong>desenvolvimento web</strong>.</p>
 
-Minha jornada de aprendizado me proporcionou uma base forte nas seguintes áreas:
+<p>Atualmente, estou aprofundando meus conhecimentos em:</p>
+<ul>
+  <li><strong>Linguagens:</strong> Python, JavaScript</li>
+  <li><strong>Desenvolvimento Web:</strong> (Se você tiver algum framework ou biblioteca específica, como Flask, Django, React, pode adicionar aqui! Por exemplo: <strong>Flask, HTML/CSS</strong>)</li>
+  <li><strong>Fundamentos:</strong> Programação Orientada a Objetos (POO) & Estruturas de Dados</li>
+  <li><strong>Bancos de Dados:</strong> SQL e modelagem de dados relacionais</li>
+</ul>
 
-* **Linguagens:** Python, Java, JavaScript
-* **Back-End:** Spring Boot & JPA/Hibernate
-* **Fundamentos:** Programação Orientada a Objetos (POO) & Estruturas de Dados
-* **Bancos de Dados:** SQL e modelagem de dados relacionais
+<p>Em breve, pretendo expandir minhas habilidades para <strong>Java</strong> e o ecossistema <strong>Spring Boot & JPA/Hibernate</strong>, buscando sempre aprimorar minhas capacidades no back-end.</p>
 
-Estou constantemente a aplicar meus conhecimentos no desenvolvimento de **projetos práticos** e busco ativamente a minha **primeira oportunidade profissional** para contribuir, aprender e crescer numa equipa colaborativa.
-
----
-
-## ✨ Meus Projetos
-
-Abaixo estão os meus principais projetos comerciais. Eles demonstram a minha capacidade de desenvolver soluções completas, desde a concepção até a distribuição.
-
-### 🔊 Windows Saída 1.0
-
-Um utilitário comercial desenvolvido em **Python** que oferece controlo avançado sobre os **dispositivos de saída de áudio** do Windows. Sua principal funcionalidade é a capacidade de **amplificar o som do sistema acima do limite padrão de 100%**, resolvendo o problema de mídias com volume baixo.
-
-* **Tecnologias:** Python, NirCMD e Equalizer APO (Dependência).
-* **Repositório:** [Visite o repositório do projeto](https://github.com/regaliainterno/windows_saida)
-
-### 🎙️ Windows Entrada 1.0
-
-Um utilitário comercial em **Python** focado em oferecer **acesso rápido e simplificado** ao controlo de dispositivos de entrada, como microfones. A aplicação permite ajustar o volume (0-100%) e silenciar o microfone através de uma interface limpa, otimizando o fluxo de trabalho para reuniões e transmissões.
-
-* **Tecnologias:** Python e NirCMD.
-* **Repositório:** [Visite o repositório do projeto](https://github.com/regaliainterno/windows_entrada)
+<p>Estou constantemente a aplicar meus conhecimentos no desenvolvimento de <strong>projetos práticos</strong> e busco ativamente a minha <strong>primeira oportunidade profissional</strong> para contribuir, aprender e crescer numa equipa colaborativa.</p>
 
 ---
 
-## 🛠️ Tecnologias e Habilidades
+<h2>✨ Meus Projetos</h2>
 
-Estas são as tecnologias com as quais tenho trabalhado e estudado:
+<p>Abaixo estão os meus principais projetos comerciais. Eles demonstram a minha capacidade de desenvolver soluções completas, desde a concepção até a distribuição.</p>
+
+<h3>🔊 Windows Saída 1.0</h3>
+
+<p>Um utilitário comercial desenvolvido em <strong>Python</strong> que oferece controlo avançado sobre os <strong>dispositivos de saída de áudio</strong> do Windows. Sua principal funcionalidade é a capacidade de <strong>amplificar o som do sistema acima do limite padrão de 100%</strong>, resolvendo o problema de mídias com volume baixo.</p>
+
+<ul>
+  <li><strong>Tecnologias:</strong> Python, NirCMD e Equalizer APO (Dependência).</li>
+  <li><strong>Repositório:</strong> <a href="https://github.com/regaliainterno/windows_saida" target="_blank">Visite o repositório do projeto</a></li>
+</ul>
+
+<h3>🎙️ Windows Entrada 1.0</h3>
+
+<p>Um utilitário comercial em <strong>Python</strong> focado em oferecer <strong>acesso rápido e simplificado</strong> ao controlo de dispositivos de entrada, como microfones. A aplicação permite ajustar o volume (0-100%) e silenciar o microfone através de uma interface limpa, otimizando o fluxo de trabalho para reuniões e transmissões.</p>
+
+<ul>
+  <li><strong>Tecnologias:</strong> Python e NirCMD.</li>
+  <li><strong>Repositório:</strong> <a href="https://github.com/regaliainterno/windows_entrada" target="_blank">Visite o repositório do projeto</a></li>
+</ul>
+
+---
+
+<h2>🛠️ Tecnologias e Habilidades</h2>
+
+<p>Estas são as tecnologias com as quais tenho trabalhado e estudado:</p>
 
 <p align="left">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
@@ -65,9 +70,9 @@ Estas são as tecnologias com as quais tenho trabalhado e estudado:
 
 ---
 
-## 📫 Vamos Conversar?
+<h2>📫 Vamos Conversar?</h2>
 
-Estou aberto a novas oportunidades, colaborações e adoro trocar ideias sobre tecnologia. Sinta-se à vontade para me contactar através de um dos canais no topo desta página ou diretamente pelo e-mail: **contatolucasscremin@gmail.com**.
+<p>Estou aberto a novas oportunidades, colaborações e adoro trocar ideias sobre tecnologia. Sinta-se à vontade para me contactar através de um dos canais no topo desta página ou diretamente pelo e-mail: <strong>contatolucasscremin@gmail.com</strong>.</p>
 
 ---
 
