@@ -52,6 +52,24 @@
   <li><strong>Repositório:</strong> <a href="https://github.com/regaliainterno/windows_entrada" target="_blank">Visite o repositório do projeto</a></li>
 </ul>
 
+<h3>🎚️ Windows Mixer 1.0</h3>
+
+<p>O <strong>Windows Mixer 1.0</strong> é um utilitário desenvolvido em <strong>Python</strong> que oferece controle granular sobre os dispositivos de áudio do sistema, permitindo gerenciar o som de aplicações individualmente.</p>
+
+<h4>Principais Recursos:</h4>
+<ul>
+  <li><strong>Mutar e Desmutar Processos Individualmente:</strong> Ative ou desative o som de qualquer aplicação instantaneamente, sem afetar o áudio dos outros programas.</li>
+  <li><strong>Alterar Volume de Processos Individualmente:</strong> Ajuste o volume de cada programa com barras deslizantes precisas e responsivas.</li>
+  <li><strong>Identificação de Processos com Áudio:</strong> O programa encontra e exibe apenas os processos que estão emitindo algum tipo de áudio, facilitando a gestão do que você ouve.</li>
+  <li><strong>Controle Geral de Áudio:</strong> Tenha acesso a uma visão geral de todas as fontes de áudio ativas.</li>
+  <li><strong>Em Breve:</strong> Fique ligado para a função de mutar e desmutar todas as abas de uma só vez!</li>
+</ul>
+
+<ul>
+  <li><strong>Tecnologias:</strong> Python.</li>
+  <li><strong>Repositório:</strong> <a href="https://github.com/regaliainterno/windows_mixer" target="_blank">Visite o repositório do projeto</a></li>
+</ul>
+
 ---
 
 <h2>🛠️ Tecnologias e Habilidades</h2>
