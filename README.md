@@ -8,6 +8,9 @@
   <a href="mailto:contatolucasscremin@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail">
   </a>
+  <a href="https://regaliainterno.github.io/jdfxop/" target="_blank">
+    <img src="https://img.shields.io/badge/Portfólio-Visite_o_portfólio-2ea44f?style=for-the-badge&logo=githubpages&logoColor=white" alt="Portfólio">
+  </a>
 </p>
 
 ---
@@ -27,6 +30,14 @@
 <p>Em breve, pretendo expandir minhas habilidades para <strong>Java</strong> e o ecossistema <strong>Spring Boot & JPA/Hibernate</strong>, buscando sempre aprimorar minhas capacidades no back-end.</p>
 
 <p>Estou constantemente a aplicar meus conhecimentos no desenvolvimento de <strong>projetos práticos</strong> e busco ativamente a minha <strong>primeira oportunidade profissional</strong> para contribuir, aprender e crescer numa equipa colaborativa.</p>
+
+---
+
+<h2>🌐 Portfólio</h2>
+<p>
+  Visite meu portfólio online para conhecer mais projetos e informações:  
+  <a href="https://regaliainterno.github.io/jdfxop/" target="_blank"><strong>regaliainterno.github.io/jdfxop/</strong></a>
+</p>
 
 ---
 
